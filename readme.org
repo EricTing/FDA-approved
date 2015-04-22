@@ -1,24 +1,27 @@
 * FDA-approved small drug 3D structure dataset
-DrugBank id --> uniprt id --> pdb id --> align sequence --> cluster --> 3D structure in the binded protein
+
 ** 1600 FDA-approved small molecule drugs
 http://www.drugbank.ca/downloads#structures
 /Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/approved.txt
+
 ** Molecule sizes
 *** average heavy atom numbers and standard deviation
 **** script
 /Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/script/count_atms.py
 **** result
 /Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/approved_heavy_atom_num.txt
-** TODO 3D structures of the chemicals
-*** DONE uniprt id to pdb id
-CLOSED: [2015-04-22 Wed 12:06]
-**** script
-/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/script/crawler.py
-**** dat
-***** pdb to uniprt
-/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/pdbsws_chain.txt
-***** uniprt to pdb (in python dictionary in cPickle format)
-/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/uniprt_to_pdb.dat
-***** set of pdb codes
-/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/pdb_codes.txt
 
+** TODO 3D structures of the chemicals
+*** DONE Drug Bank id to pdb id
+CLOSED: [2015-04-22 Wed 12:06]
+**** pdb --> uniprt
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/pdbsws_chain.txt
+**** drug bank id --> uniprt ids
+1. ./script/crawler.py
+2. ./dat/drugid_uniprturls.dat
+**** uniprt id --> pdb id
+1. ./script/uniprt_pdb.py
+2. ./dat/uniprt_to_pdb.dat
+**** drug bank id --> pdb id
+1. ./script/query_pdb.py
+2. ./dat/drugid_pdb.dat
