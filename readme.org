@@ -1,0 +1,8 @@
+* FDA-approved small drug 3D structure dataset
+** 1600 FDA-approved small molecule drugs
+http://www.drugbank.ca/downloads#structures
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/approved.txt
+** Molecule sizes
+*** average heavy atom numbers and standard deviation
+** TODO 3D structures of the chemicals
+*** 
