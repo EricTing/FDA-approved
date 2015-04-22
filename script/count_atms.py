@@ -23,6 +23,11 @@ class CompoundLines:
     def getID(self):
         return self.lines[1].split()[1]
 
+    def getDrugBankID(self):
+        for idx, val in enumerate(self.lines):
+            if '<DRUGBANK_ID>' in val:
+                return self.lines[idx + 1].rstrip()
+
     def getAtomNum(self):
         first_token = self.lines[3].split()[0]
         if len(first_token) == 5:
@@ -46,4 +51,4 @@ sects = readSections(ifn)
 print "ID", "#HeavyAtom"
 for sect in sects:
     cmp_lines = CompoundLines(sect)
-    print cmp_lines.getID(), len(cmp_lines.getHeavyAtomCoordLines())
+    print cmp_lines.getDrugBankID(), len(cmp_lines.getHeavyAtomCoordLines())
