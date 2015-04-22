@@ -1,4 +1,5 @@
 * FDA-approved small drug 3D structure dataset
+DrugBank id --> uniprt id --> pdb id --> align sequence --> cluster --> 3D structure in the binded protein
 ** 1600 FDA-approved small molecule drugs
 http://www.drugbank.ca/downloads#structures
 /Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/approved.txt
