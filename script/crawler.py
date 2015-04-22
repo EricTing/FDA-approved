@@ -1,3 +1,4 @@
+import cPickle
 import urllib2
 from BeautifulSoup import BeautifulSoup
 
@@ -5,26 +6,28 @@ import pandas as pd
 
 access_num = 'DB01048'
 
-def uniportUrls(access_num):
+def uniprtUrls(access_num):
     my_url = 'http://www.drugbank.ca/drugs/' + access_num
     content = urllib2.urlopen(my_url)
     soup = BeautifulSoup(content.read())
     links = soup('a')
-    uniport_urls = [l['href'] for l in links if 'uniprot.org' in l['href']]
+    uniprt_urls = [l['href'] for l in links if 'uniprot.org' in l['href']]
 
-    return uniport_urls
+    return uniprt_urls
 
-uniport_pdb_dat = "../dat/pdbsws_chain.txt"
+uniprt_pdb_dat = "../dat/pdbsws_chain.txt"
 
-dset = pd.read_csv(uniport_pdb_dat, sep='\s+', index_col=False, header=None)
+dset = pd.read_csv(uniprt_pdb_dat, sep='\s+', index_col=False, header=None)
 pdbs = dset[0]
 codes = []
 for pdb_code in pdbs:
     codes.append(pdb_code)
 
-codes = set(codes)
-for code in codes:
-    print code
+codes = list(set(codes))
+# print ','.join(codes)
+# for code in codes:
+#     print code
+
 
 def readMapping(dat):
     """
@@ -38,14 +41,18 @@ def readMapping(dat):
 
     mapping = {}
     cnt = 0
+    print "total to process", len(acs)
     for ac in acs:
         if ac != '?':
             my_rows = dset[dset['ac'] == ac]
             pdbs = [' '.join(entry) for entry in my_rows.values[:, 0:2]]
             mapping[ac] = pdbs
             cnt += 1
-            print cnt
+            print "processed", cnt
 
     return mapping
 
-print readMapping(uniport_pdb_dat)
+mapping = readMapping(uniprt_pdb_dat)
+output = open('../dat/uniprt_to_pdb.dat', 'wb')
+cPickle.dump(mapping, output)
+output.close()

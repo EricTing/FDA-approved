@@ -4,5 +4,20 @@ http://www.drugbank.ca/downloads#structures
 /Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/approved.txt
 ** Molecule sizes
 *** average heavy atom numbers and standard deviation
+**** script
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/script/count_atms.py
+**** result
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/approved_heavy_atom_num.txt
 ** TODO 3D structures of the chemicals
-*** 
+*** DONE uniprt id to pdb id
+CLOSED: [2015-04-22 Wed 12:06]
+**** script
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/script/crawler.py
+**** dat
+***** pdb to uniprt
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/pdbsws_chain.txt
+***** uniprt to pdb (in python dictionary in cPickle format)
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/uniprt_to_pdb.dat
+***** set of pdb codes
+/Users/yunding/Dropbox/Research_LSU/FDA-Approved-Drug-DataSet/dat/pdb_codes.txt
+
