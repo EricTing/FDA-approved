@@ -106,8 +106,8 @@
  my $fcif1 = $ARGV[0];
  my $fpdb1 = $ARGV[1];
  
- my $jctrip = '/home/michal/local/src/jackal_64bit/bin/ctrip';
- my $lpc    = '/home/michal/local/src/LPC/lpcEx';
+ my $jctrip = '/project/michal/apps/jackal_64bit/bin/ctrip';
+ my $lpc    = '/home/jaydy/src/LPC/lpcEx';
  
  die "Cannot find $fcif1\n"  if ( !( -e $fcif1 ) );
  die "Cannot find $jctrip\n" if ( !( -e $jctrip ) );
