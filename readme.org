@@ -26,25 +26,67 @@ CLOSED: [2015-04-22 Wed 12:06]
 **** drug bank id --> pdb id
 1. ./script/query_pdb.py
 2. ./dat/drugid_pdb.dat
+3. 82773 pdbs
+4. 138078 chains
 
 *** TODO Filter the unbound proteins
 
-**** Extract the ligand atoms from the CIF files
-1. ./script/qmol_CIF2PDB.pl
+**** DONE Extract the ligand atoms from the CIF files
+CLOSED: [2015-04-26 Sun 11:33] by Michal
+1. ./script/qmol_CIF2PDB.pl (not compatible with latest perl modules)
+2. /work/jaydy/dat/fda_pdb_mb/
 
-**** Compare the pdb ligand with drug bank ligand
+**** DONE Compare the pdb ligand with drug bank ligand
+CLOSED: [2015-04-26 Sun 21:55]
 1. calculate tanimoto coefficient using Kcombu
+   1. ./script/calculateTanimota.py
+   2. pkcombu Segmentation fault for
+      1. DB01049
+      2. to check
+         pkcombu -A /work/jaydy/working/kcombu_run/DB01049_.sdf -B /work/jaydy/dat/_pdb_mb/ib/3ibdA.LG3.pdb
+      3. DB00707
 2. refuse proteins if their ligand's tanimoto < 0.9
+   1. ./script/checkTanimoto.py
 
-*** TODO Cluster the bound proteins based on sequence similarity
+*** DONE Cluster the bound proteins based on sequence similarity
+CLOSED: [2015-04-27 Mon 17:19]
 
-**** clean the proteins sequences
-1. ctrip
+**** DONE add missing atoms
+CLOSED: [2015-04-27 Mon 17:17]
+./script/fixPrt.py
+
+**** DONE clean the proteins sequences
+CLOSED: [2015-04-27 Mon 11:24]
+python ./script/pdb_to_fasta.py > run.sh
+sh ./script/run.sh
+1. ctrip, heavy atom model
+   1. /project/michal/apps/jackal_64bit/bin/ctrip
 2. ./script/pdb2pdb.pl
    move pdb sequence to start at 1
 3. ./script/pdb2fasta.pl
    convert pdb to fasta
 4. ./script/fasta2fasta.pl
    break the lines at 80
-**** cd-hit to cluster the sequences
-   
+**** DONE cd-hit to cluster the sequences
+CLOSED: [2015-04-27 Mon 17:18]
+1. [X] do not count the prt with seq length > 600
+2. cluster
+   python ./script/cluster_seq.py > ./script/cluster_seq.sh
+   sh ./script/cluster_seq.sh
+3. collect
+   /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
+4. statistics
+   1554 drugs
+   1280 drugs with not lig structure found
+   648 conformations found for 274 drugs
+
+*** TODO
+1. size of 1554 drugs
+2. 
+3. from 648 ligs, see what fall into the 1 or 2 \sigma
+
+
+
+correlation between cms and rmsd
+
+re-opt scoring function
