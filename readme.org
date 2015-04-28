@@ -75,18 +75,47 @@ CLOSED: [2015-04-27 Mon 17:18]
    sh ./script/cluster_seq.sh
 3. collect
    /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
-4. statistics
-   1554 drugs
-   1280 drugs with not lig structure found
-   648 conformations found for 274 drugs
 
-*** TODO
+**** TODO
 1. size of 1554 drugs
-2. 
-3. from 648 ligs, see what fall into the 1 or 2 \sigma
-
+   1. script
+      ./script/count_atms.py
+      ./dat/drug_size.txt
+   2. result
+      | count | 1554.000000 |
+      | mean  |   26.257400 |
+      | std   |   18.172654 |
+      | min   |    1.000000 |
+      | 25%   |   18.000000 |
+      | 50%   |   23.000000 |
+      | 75%   |   30.000000 |
+      | max   |  419.000000 |
+   3. 2 \sigma range
+      (0, 62.6)
+2. size of filtered drugs
+   1. script
+      ./script/drug_size.py
+   2. result
+      | count | 274.000000 |
+      | mean  |  24.828467 |
+      | std   |  12.933323 |
+      | min   |   6.000000 |
+      | 25%   |  17.000000 |
+      | 50%   |  23.000000 |
+      | 75%   |  29.000000 |
+      | max   |  93.000000 |
+   3. within the 2 \sigma range
+      | count | 268.000000 |
+      | mean  |  23.559701 |
+      | std   |   9.721601 |
+      | min   |   6.000000 |
+      | 25%   |  17.000000 |
+      | 50%   |  22.000000 |
+      | 75%   |  29.000000 |
+      | max   |  57.000000 |
+   4. dat
+      ./dat/representative_drugs.csv
+   
 
 
 correlation between cms and rmsd
-
-re-opt scoring function

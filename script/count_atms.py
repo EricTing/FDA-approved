@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 
-ifn = "../dat/approved.txt"
-
-
 def readSections(ifn):
     sections = []
     with open(ifn, 'r') as f:
@@ -46,9 +43,11 @@ class CompoundLines:
                 if l.split()[3] != 'H']
 
 
-sects = readSections(ifn)
+if __name__ == "__main__":
+    ifn = "../dat/approved.txt"
+    sects = readSections(ifn)
 
-print "ID", "#HeavyAtom"
-for sect in sects:
-    cmp_lines = CompoundLines(sect)
-    print cmp_lines.getDrugBankID(), len(cmp_lines.getHeavyAtomCoordLines())
+    print "ID", "#HeavyAtom"
+    for sect in sects:
+        cmp_lines = CompoundLines(sect)
+        print cmp_lines.getDrugBankID(), len(cmp_lines.getHeavyAtomCoordLines())
