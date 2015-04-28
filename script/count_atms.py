@@ -17,6 +17,9 @@ class CompoundLines:
     def __init__(self, section_lines):
         self.lines = [l for l in section_lines]
 
+    def copyLines(self):
+        return [_ for _ in self.lines]
+
     def getID(self):
         return self.lines[1].split()[1]
 
