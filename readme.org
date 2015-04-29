@@ -11,7 +11,7 @@
 **** result
 ./dat/approved_heavy_atom_num.txt
 
-** TODO 3D structures of the chemicals
+** DONE 3D structures of the chemicals
 
 *** DONE Drug Bank id to pdb id
 CLOSED: [2015-04-22 Wed 12:06]
@@ -29,7 +29,7 @@ CLOSED: [2015-04-22 Wed 12:06]
 3. 82773 pdbs
 4. 138078 chains
 
-*** TODO Filter the unbound proteins
+*** DONE Filter the unbound proteins
 
 **** DONE Extract the ligand atoms from the CIF files
 CLOSED: [2015-04-26 Sun 11:33] by Michal
@@ -76,7 +76,7 @@ CLOSED: [2015-04-27 Mon 17:18]
 3. collect
    /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
 
-**** TODO
+**** DONE
 1. size of 1554 drugs
    1. script
       ./script/count_atms.py
@@ -90,7 +90,14 @@ CLOSED: [2015-04-27 Mon 17:18]
       | 50%   |   23.000000 |
       | 75%   |   30.000000 |
       | max   |  419.000000 |
-   3. 2 \sigma range
+   3. one atom drugs
+      | DrugBank ID | Chem |
+      |-------------+------|
+      | DB01356     | Li   |
+      | DB01370     | Al   |
+      | DB01592     | Fe   |
+      | DB01593     | Zn   |
+   4. 2 \sigma range
       (0, 62.6)
 2. size of filtered drugs
    1. script
@@ -115,7 +122,14 @@ CLOSED: [2015-04-27 Mon 17:18]
       | max   |  57.000000 |
    4. dat
       ./dat/representative_drugs.csv
-   
+   5. human inspection
+      1. prepare the datas for rasmol
+         ./script/inspect_dat.py
 
 
-correlation between cms and rmsd
+**** TODO
+transform the format uisng OpenBabel
+1. Ligands
+   pdb ---> sdf
+2. Proteins
+   pdb ---> pdb
