@@ -10,6 +10,7 @@
 ./script/count_atms.py
 **** result
 ./dat/approved_heavy_atom_num.txt
+./dat/elements.txt
 
 ** DONE 3D structures of the chemicals
 
@@ -35,6 +36,73 @@ CLOSED: [2015-04-22 Wed 12:06]
 CLOSED: [2015-04-26 Sun 11:33] by Michal
 1. ./script/qmol_CIF2PDB.pl (not compatible with latest perl modules)
 2. /work/jaydy/dat/fda_pdb_mb/
+
+**** TODO Cluster drug ligands
+***** TODO 3D Structure
+1. ./script/cluster_fingerprints.py
+2. sdf --> remove H --> smi (obabel) -->
+   obgen -ff <drug>.smi -ff MMF94 --> sdf
+3. fails for the below drugs
+   | drug id | # heavy atom |
+   |---------+--------------|
+   | DB08928 |           18 |
+   | DB01482 |           26 |
+   | DB01294 |           12 |
+   | DB06715 |            2 |
+   | DB00534 |           11 |
+   | DB01377 |            2 |
+   | DB00971 |            2 |
+   | DB08884 |           40 |
+   | DB00995 |           32 |
+   | DB00325 |           13 |
+   | DB08990 |           30 |
+   | DB00789 |           54 |
+   | DB05245 |           18 |
+   | DB00364 |           78 |
+   | DB00538 |           36 |
+   | DB00638 |          419 |
+   | DB00225 |           31 |
+   | DB05630 |           43 |
+   | DB01375 |            8 |
+   | DB00597 |           29 |
+   | DB00200 |           92 |
+   | DB00188 |           28 |
+   | DB00526 |           15 |
+   | DB06705 |           56 |
+   | DB01169 |            5 |
+   | DB00483 |           39 |
+   | DB00115 |           93 |
+   | DB00516 |            9 |
+   | DB00515 |            5 |
+   | DB06703 |           32 |
+   | DB08913 |            3 |
+   | DB06723 |            4 |
+   | DB05260 |           13 |
+   | DB05389 |           15 |
+   | DB00743 |           63 |
+   | DB06402 |          122 |
+   | DB00958 |           13 |
+4. elements that should not be included
+   ./dat/removed_ele.txt
+5. remove the unnecessary elements
+   ./script/remove_elements.pl
+   
+   
+***** TODO Fingerprints
+1. example console command
+   MACCSKeysFingerprints.pl --output FP --CompoundID DB00733 DB00733.3d.sdf
+2. script
+   ./script/fingerprints.py
+3. collect the finger prints to one file
+   ./script/collect_prints.py
+   
+***** TODO Cluster based on fingerprints
+1. console cmd
+   $ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
+   $ subset -sim 0.9 -log fda_subset.txt < fda_prints.txt > subset_fda_prints.log
+2. clustering result
+   ./dat/drug_representatives.txt
+
 
 **** DONE Compare the pdb ligand with drug bank ligand
 CLOSED: [2015-04-26 Sun 21:55]
@@ -68,13 +136,17 @@ sh ./script/run.sh
 4. ./script/fasta2fasta.pl
    break the lines at 80
 **** DONE cd-hit to cluster the sequences
-CLOSED: [2015-04-27 Mon 17:18]
+CLOSED: [2015-04-30 Thu 11:40]
 1. [X] do not count the prt with seq length > 600
 2. cluster
    python ./script/cluster_seq.py > ./script/cluster_seq.sh
    sh ./script/cluster_seq.sh
 3. collect
    /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
+4. filter
+   1. ./script/filter.py
+   2. 188 drugs with 459 complxes
+   
 
 **** DONE
 1. size of 1554 drugs

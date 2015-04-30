@@ -45,12 +45,21 @@ class CompoundLines:
         return [l for l in self.getAtomCoordLines()
                 if l.split()[3] != 'H']
 
+    def heavyAtomNum(self):
+        return len(self.getHeavyAtomCoordLines())
+
+    def heavyAtoms(self):
+        return [l.split()[3] for l in self.getHeavyAtomCoordLines()]
 
 if __name__ == "__main__":
     ifn = "../dat/approved.txt"
     sects = readSections(ifn)
 
-    print "ID", "#HeavyAtom"
+    elements = set()
     for sect in sects:
         cmp_lines = CompoundLines(sect)
-        print cmp_lines.getDrugBankID(), len(cmp_lines.getHeavyAtomCoordLines())
+        heavy_atoms = cmp_lines.heavyAtoms()
+        elements |= set(heavy_atoms)
+
+    for ele in elements:
+        print ele
