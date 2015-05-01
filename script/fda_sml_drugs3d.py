@@ -1,21 +1,10 @@
 import os
 import pybel
-import pandas as pd
-df = pd.DataFrame
-from multiprocessing import Pool
 
 from count_atms import readSections, CompoundLines
 
 
-WORK_DIR = "/work/jaydy/working/fda_3d"
-
-try:
-    os.makedirs(WORK_DIR)
-except:
-    pass
-
-
-def cleanSdf(call=False):
+def cleanSdf(WORK_DIR, call=False):
     fda_drugs_ifn = "../dat/approved.txt"
     sections = readSections(fda_drugs_ifn)
     clean_sdf_ofns = []
@@ -40,8 +29,25 @@ def cleanSdf(call=False):
         clean_sdf_ofns.append(clean_ofn)
     return clean_sdf_ofns
 
+
+def optCoords(drug, WORK_DIR):
+    drug.addh()
+    drug.localopt()
+    drug.removeh()
+    ofn = os.path.join(WORK_DIR, drug.title, drug.title + '.sdf')
+    drug.write("sdf", ofn)
+    print drug.title, "done"
+
+
 if __name__ == "__main__":
-    clean_sdf_fns = cleanSdf(call=True)
+    WORK_DIR = "/work/jaydy/working/fda_3d"
+
+    try:
+        os.makedirs(WORK_DIR)
+    except:
+        pass
+
+    clean_sdf_fns = cleanSdf(WORK_DIR, call=True)
 
     drugs = []
     for sdf in clean_sdf_fns:
@@ -54,14 +60,8 @@ if __name__ == "__main__":
     for drug in drugs:
         drug.removeh()
 
-    heavy_atom_nums = df([len(drug.atoms) for drug in drugs])
-
     sml_drugs = [drug for drug in drugs
-                if 8 < len(drug.atoms) < 44]
+                if 8 <= len(drug.atoms) <= 44]
 
-    for drug in sml_drugs:
-        drug.localopt()
-        drug.removeh()
-        ofn = os.path.join(WORK_DIR, drug.title, drug.title + '.sdf')
-        drug.write("sdf", ofn)
-        print drug.title, "done"
+    for drug in drugs:
+        optCoords(drug, WORK_DIR)

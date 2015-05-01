@@ -39,17 +39,17 @@ CLOSED: [2015-04-26 Sun 11:33] by Michal
 
 **** TODO Cluster drug ligands
 ***** DONE 3D Structure
-CLOSED: [2015-04-30 Thu 21:52]
+CLOSED: [2015-05-01 Fri 12:09]
 1. sdf --> remove H --> smi (obabel) -->
    obgen -ff <drug>.smi -ff MMF94 --> sdf
 2. elements that should not be included
    ./dat/removed_ele.txt
 3. remove the unnecessary elements
    ./script/remove_elements.pl
-4. ./script/fda_drugs_3d.py
+4. ./script/fda_sml_drugs3d.py
    
 ***** DONE Fingerprints
-CLOSED: [2015-04-30 Thu 22:41]
+CLOSED: [2015-05-01 Fri 12:09]
 1. example console command
    MACCSKeysFingerprints.pl --output FP --CompoundID DB00733 DB00733.3d.sdf
 2. script
@@ -58,7 +58,7 @@ CLOSED: [2015-04-30 Thu 22:41]
    ./script/collect_prints.py
    
 ***** DONE Cluster based on fingerprints
-CLOSED: [2015-04-30 Thu 22:42]
+CLOSED: [2015-05-01 Fri 12:09]
 1. console cmd
    $ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
    $ subset -sim 0.9 -log fda_subset.txt < fda_prints.txt > subset_fda_prints.log
