@@ -38,57 +38,18 @@ CLOSED: [2015-04-26 Sun 11:33] by Michal
 2. /work/jaydy/dat/fda_pdb_mb/
 
 **** TODO Cluster drug ligands
-***** TODO 3D Structure
-1. ./script/cluster_fingerprints.py
-2. sdf --> remove H --> smi (obabel) -->
+***** DONE 3D Structure
+CLOSED: [2015-04-30 Thu 21:52]
+1. sdf --> remove H --> smi (obabel) -->
    obgen -ff <drug>.smi -ff MMF94 --> sdf
-3. fails for the below drugs
-   | drug id | # heavy atom |
-   |---------+--------------|
-   | DB08928 |           18 |
-   | DB01482 |           26 |
-   | DB01294 |           12 |
-   | DB06715 |            2 |
-   | DB00534 |           11 |
-   | DB01377 |            2 |
-   | DB00971 |            2 |
-   | DB08884 |           40 |
-   | DB00995 |           32 |
-   | DB00325 |           13 |
-   | DB08990 |           30 |
-   | DB00789 |           54 |
-   | DB05245 |           18 |
-   | DB00364 |           78 |
-   | DB00538 |           36 |
-   | DB00638 |          419 |
-   | DB00225 |           31 |
-   | DB05630 |           43 |
-   | DB01375 |            8 |
-   | DB00597 |           29 |
-   | DB00200 |           92 |
-   | DB00188 |           28 |
-   | DB00526 |           15 |
-   | DB06705 |           56 |
-   | DB01169 |            5 |
-   | DB00483 |           39 |
-   | DB00115 |           93 |
-   | DB00516 |            9 |
-   | DB00515 |            5 |
-   | DB06703 |           32 |
-   | DB08913 |            3 |
-   | DB06723 |            4 |
-   | DB05260 |           13 |
-   | DB05389 |           15 |
-   | DB00743 |           63 |
-   | DB06402 |          122 |
-   | DB00958 |           13 |
-4. elements that should not be included
+2. elements that should not be included
    ./dat/removed_ele.txt
-5. remove the unnecessary elements
+3. remove the unnecessary elements
    ./script/remove_elements.pl
+4. ./script/fda_drugs_3d.py
    
-   
-***** TODO Fingerprints
+***** DONE Fingerprints
+CLOSED: [2015-04-30 Thu 22:41]
 1. example console command
    MACCSKeysFingerprints.pl --output FP --CompoundID DB00733 DB00733.3d.sdf
 2. script
@@ -96,7 +57,8 @@ CLOSED: [2015-04-26 Sun 11:33] by Michal
 3. collect the finger prints to one file
    ./script/collect_prints.py
    
-***** TODO Cluster based on fingerprints
+***** DONE Cluster based on fingerprints
+CLOSED: [2015-04-30 Thu 22:42]
 1. console cmd
    $ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
    $ subset -sim 0.9 -log fda_subset.txt < fda_prints.txt > subset_fda_prints.log

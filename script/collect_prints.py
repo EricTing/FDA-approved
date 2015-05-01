@@ -3,7 +3,8 @@
 import os
 from glob import glob
 
-DAT_DIR = "/work/jaydy/working/fingers"
+DAT_DIR = "/work/jaydy/working/prints"
+
 
 fpfs = glob(DAT_DIR + "/*MACCSKeysFP.fpf")
 
