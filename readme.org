@@ -98,7 +98,7 @@ sh ./script/run.sh
 4. ./script/fasta2fasta.pl
    break the lines at 80
 **** DONE cd-hit to cluster the sequences
-CLOSED: [2015-04-30 Thu 11:40]
+CLOSED: [2015-05-01 Fri 12:39]
 1. [X] do not count the prt with seq length > 600
 2. cluster
    python ./script/cluster_seq.py > ./script/cluster_seq.sh
@@ -107,7 +107,6 @@ CLOSED: [2015-04-30 Thu 11:40]
    /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
 4. filter
    1. ./script/filter.py
-   2. 188 drugs with 459 complxes
    
 
 **** DONE
@@ -133,27 +132,33 @@ CLOSED: [2015-04-30 Thu 11:40]
       | DB01593     | Zn   |
    4. 2 \sigma range
       (0, 62.6)
+   5. 1 \sigma range
+      (8, 44)
 2. size of filtered drugs
    1. script
       ./script/drug_size.py
    2. result
-      | count | 274.000000 |
-      | mean  |  24.828467 |
-      | std   |  12.933323 |
-      | min   |   6.000000 |
-      | 25%   |  17.000000 |
-      | 50%   |  23.000000 |
-      | 75%   |  29.000000 |
-      | max   |  93.000000 |
-   3. within the 2 \sigma range
-      | count | 268.000000 |
-      | mean  |  23.559701 |
-      | std   |   9.721601 |
-      | min   |   6.000000 |
-      | 25%   |  17.000000 |
-      | 50%   |  22.000000 |
-      | 75%   |  29.000000 |
-      | max   |  57.000000 |
+      | statistics | #HeavyAtom |
+      |------------+------------|
+      | count      | 197.000000 |
+      | mean       |  23.928934 |
+      | std        |  12.470170 |
+      | min        |   6.000000 |
+      | 25%        |  16.000000 |
+      | 50%        |  21.000000 |
+      | 75%        |  29.000000 |
+      | max        |  93.000000 |
+   3. within the range of (8, 44)
+      | statistics | #HeavyAtom |
+      |------------+------------|
+      | count      | 186.000000 |
+      | mean       |  22.639785 |
+      | std        |   8.456204 |
+      | min        |   8.000000 |
+      | 25%        |  16.000000 |
+      | 50%        |  21.000000 |
+      | 75%        |  29.000000 |
+      | max        |  44.000000 |
    4. dat
       ./dat/representative_drugs.csv
    5. human inspection

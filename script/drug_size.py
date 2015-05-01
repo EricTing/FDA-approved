@@ -5,8 +5,7 @@ df = pandas.DataFrame
 
 from count_atms import CompoundLines, readSections
 
-# if __name__ == "__main__":
-dat_ifn = "../dat/drugid_clustered_ligs.dat"
+dat_ifn = "../dat/filtered_drugid_clustered_ligs.dat"
 with open(dat_ifn, 'r') as f:
     dat = cPickle.load(f)
 
@@ -25,4 +24,8 @@ for sect in sects:
         dset.append((my_id, len(cmp_lines.getHeavyAtomCoordLines())))
 
 dset = df(dset)
+dset.columns = ['id','#HeavyAtom']
+within_dset = dset[(dset['#HeavyAtom'] >= 8)
+                   & (dset['#HeavyAtom'] <= 44)]
 
+within_dset.to_csv("../dat/representative_drugs.csv")

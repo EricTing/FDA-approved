@@ -63,5 +63,5 @@ if __name__ == "__main__":
     sml_drugs = [drug for drug in drugs
                 if 8 <= len(drug.atoms) <= 44]
 
-    for drug in drugs:
+    for drug in sml_drugs:
         optCoords(drug, WORK_DIR)
