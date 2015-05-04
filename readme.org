@@ -130,8 +130,8 @@ CLOSED: [2015-05-02 Sat 16:58]
    sh /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/cluster_seq.sh
 3. collect
    /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
-4. filter
-   1. ./script/filter.py
+# 4. filter
+#    1. ./script/filter.py
    
 
 **** TODO 
