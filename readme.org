@@ -37,37 +37,60 @@ CLOSED: [2015-04-26 Sun 11:33] by Michal
 1. ./script/qmol_CIF2PDB.pl (not compatible with latest perl modules)
 2. /work/jaydy/dat/fda_pdb_mb/
 
-**** TODO Cluster drug ligands
+**** DONE Cluster drug ligands
+CLOSED: [2015-05-02 Sat 18:02]
 ***** DONE 3D Structure
-CLOSED: [2015-05-01 Fri 12:09]
-1. sdf --> remove H --> smi (obabel) -->
-   obgen -ff <drug>.smi -ff MMF94 --> sdf
-2. elements that should not be included
+CLOSED: [2015-05-01 Fri 16:06]
+1. elements that should not be included
    ./dat/removed_ele.txt
-3. remove the unnecessary elements
-   ./script/remove_elements.pl
-4. ./script/fda_sml_drugs3d.py
+   1. remove the unnecessary elements
+      ./script/remove_elements.pl
+      ./script/clean_fda_drugs.py
+2. sdf --> remove H --> smi (obabel) -->
+   obgen -ff <drug>.smi -ff MMF94 --> sdf
+   1. ./script/fda_drug3d.py
+   2. ./script/run_fda_drug3d.py
    
-***** DONE Fingerprints
-CLOSED: [2015-05-01 Fri 12:09]
-1. example console command
-   MACCSKeysFingerprints.pl --output FP --CompoundID DB00733 DB00733.3d.sdf
-2. script
-   ./script/fingerprints.py
-3. collect the finger prints to one file
-   ./script/collect_prints.py
+***** DONE Smiles
+CLOSED: [2015-05-01 Fri 17:31]
+generate the smiles
+1. ./script/run_esimdock.py
+
+2. ./dat/smi_done.txt
    
-***** DONE Cluster based on fingerprints
-CLOSED: [2015-05-01 Fri 12:09]
-1. console cmd
+3. failures due to certain reasons
+   | DB01593 |
+   | DB06715 |
+   | DB00761 |
+   | DB01377 |
+   | DB01592 |
+   | DB00971 |
+   | DB00677 |
+   | DB01356 |
+   | DB00638 |
+   | DB01164 |
+   | DB01370 |
+   | DB01169 |
+   | DB00516 |
+   | DB00515 |
+   | DB08913 |
+   | DB06723 |
+   | DB05389 |
+   | DB00492 |
+   
+***** DONE Cluster based on Smiles
+CLOSED: [2015-05-01 Fri 17:46]
+1. collect the smiles
+   1. ./script/collect_prints.py
+   2. ./dat/fda_prints.txt
+2. console cmd
    $ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
    $ subset -sim 0.9 -log fda_subset.txt < fda_prints.txt > subset_fda_prints.log
-2. clustering result
-   ./dat/drug_representatives.txt
+   $ awk '{print $1}' fda_subset.txt > drug_representatives.txt
 
 
 **** DONE Compare the pdb ligand with drug bank ligand
-CLOSED: [2015-04-26 Sun 21:55]
+CLOSED: [2015-05-02 Sat 13:48]
 1. calculate tanimoto coefficient using Kcombu
    1. ./script/calculateTanimota.py
    2. pkcombu Segmentation fault for
@@ -76,17 +99,18 @@ CLOSED: [2015-04-26 Sun 21:55]
          pkcombu -A /work/jaydy/working/kcombu_run/DB01049_.sdf -B /work/jaydy/dat/_pdb_mb/ib/3ibdA.LG3.pdb
       3. DB00707
 2. refuse proteins if their ligand's tanimoto < 0.9
-   1. ./script/checkTanimoto.py
+   1. ./script/calculateTanimoto.py
+   2. TANI_DIR = "/work/jaydy/working/tanimoto"
 
 *** DONE Cluster the bound proteins based on sequence similarity
-CLOSED: [2015-04-27 Mon 17:19]
+CLOSED: [2015-05-02 Sat 18:03]
 
 **** DONE add missing atoms
-CLOSED: [2015-04-27 Mon 17:17]
+CLOSED: [2015-05-02 Sat 15:25]
 ./script/fixPrt.py
 
 **** DONE clean the proteins sequences
-CLOSED: [2015-04-27 Mon 11:24]
+CLOSED: [2015-05-02 Sat 15:39]
 python ./script/pdb_to_fasta.py > run.sh
 sh ./script/run.sh
 1. ctrip, heavy atom model
@@ -98,18 +122,19 @@ sh ./script/run.sh
 4. ./script/fasta2fasta.pl
    break the lines at 80
 **** DONE cd-hit to cluster the sequences
-CLOSED: [2015-05-01 Fri 12:39]
+CLOSED: [2015-05-02 Sat 16:58]
 1. [X] do not count the prt with seq length > 600
 2. cluster
    python ./script/cluster_seq.py > ./script/cluster_seq.sh
-   sh ./script/cluster_seq.sh
+   cd /work/jaydy/working/cluster
+   sh /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/cluster_seq.sh
 3. collect
    /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
 4. filter
    1. ./script/filter.py
    
 
-**** DONE
+**** TODO 
 1. size of 1554 drugs
    1. script
       ./script/count_atms.py
@@ -149,21 +174,8 @@ CLOSED: [2015-05-01 Fri 12:39]
       | 75%        |  29.000000 |
       | max        |  93.000000 |
    3. within the range of (8, 44)
-      | statistics | #HeavyAtom |
-      |------------+------------|
-      | count      | 186.000000 |
-      | mean       |  22.639785 |
-      | std        |   8.456204 |
-      | min        |   8.000000 |
-      | 25%        |  16.000000 |
-      | 50%        |  21.000000 |
-      | 75%        |  29.000000 |
-      | max        |  44.000000 |
    4. dat
       ./dat/representative_drugs.csv
-   5. human inspection
-      1. prepare the datas for rasmol
-         ./script/inspect_dat.py
 
 
 **** TODO

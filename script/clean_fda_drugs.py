@@ -3,6 +3,8 @@ import pybel
 
 from count_atms import readSections, CompoundLines
 
+WORK_DIR = "/work/jaydy/working/fda_3d"
+
 
 def cleanSdf(WORK_DIR, call=False):
     fda_drugs_ifn = "../dat/approved.txt"
@@ -30,17 +32,7 @@ def cleanSdf(WORK_DIR, call=False):
     return clean_sdf_ofns
 
 
-def optCoords(drug, WORK_DIR):
-    drug.addh()
-    drug.localopt()
-    drug.removeh()
-    ofn = os.path.join(WORK_DIR, drug.title, drug.title + '.sdf')
-    drug.write("sdf", ofn)
-    print drug.title, "done"
-
-
 if __name__ == "__main__":
-    WORK_DIR = "/work/jaydy/working/fda_3d"
 
     try:
         os.makedirs(WORK_DIR)
@@ -49,19 +41,23 @@ if __name__ == "__main__":
 
     clean_sdf_fns = cleanSdf(WORK_DIR, call=True)
 
-    drugs = []
-    for sdf in clean_sdf_fns:
-        drug_id = os.path.basename(sdf).split('_')[0]
-        drug = pybel.readfile("sdf", sdf).next()
-        drug.title = drug_id
-        drugs.append(drug)
+    with open("../dat/clean_sdf_paths.txt", 'w') as f:
+        for fn in clean_sdf_fns:
+            f.writelines(fn + "\n")
 
-    # remove hydrogen atoms
-    for drug in drugs:
-        drug.removeh()
+    # drugs = []
+    # for sdf in clean_sdf_fns:
+    #     drug_id = os.path.basename(sdf).split('_')[0]
+    #     drug = pybel.readfile("sdf", sdf).next()
+    #     drug.title = drug_id
+    #     drugs.append(drug)
 
-    sml_drugs = [drug for drug in drugs
-                if 8 <= len(drug.atoms) <= 44]
+    # # remove hydrogen atoms
+    # for drug in drugs:
+    #     drug.removeh()
 
-    for drug in sml_drugs:
-        optCoords(drug, WORK_DIR)
+    # sml_drugs = [drug for drug in drugs
+    #             if 8 <= len(drug.atoms) <= 44]
+
+    # for drug in drugs:
+    #     optCoords(drug, WORK_DIR)
