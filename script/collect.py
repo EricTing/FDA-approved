@@ -4,19 +4,14 @@ import glob
 import pybel
 import shutil
 
-from cluster_seq import WORK_DIR
-from cluster_seq import loadSubset, subset_ifn, drug2similarlig_ofn
+from cluster_seq import WORK_DIR, gatherLigIds
+from clustering import DSET_PATH
+
+# from cluster_seq import loadSubset, subset_ifn, drug2similarlig_ofn
 
 DAT_DIR = "/work/jaydy/dat/fda_pdb_mb"
 INSPECT_DIR = "/work/jaydy/working/Inspect/"
-
 CLUSTER_DIR = "/work/jaydy/working/cluster"
-subsets = loadSubset(subset_ifn)
-
-with open(drug2similarlig_ofn, 'r') as f:
-    drug2similarlig = cPickle.load(f)
-
-cluster_result_paths = glob.glob(CLUSTER_DIR + "/*clustered.clstr")
 
 
 def getPrtMedoids(cluster_result_paths):
@@ -24,85 +19,57 @@ def getPrtMedoids(cluster_result_paths):
     for path in cluster_result_paths:
         idx = os.path.basename(path).split('.')[0]
         idx = int(idx)
-        if idx in subsets:
-            idx2pdb[idx] = set()
-            lines = [l.rstrip() for l in file(path)]
-            for line in lines:
-                tokens = line.split()
-                if tokens[-1] == '*':
-                    pdb_id = tokens[-2].split('.')[1][1:]
-                    idx2pdb[idx].add(pdb_id)
+        my_prts = set()
+        lines = [l.rstrip() for l in file(path)]
+        for line in lines:
+            tokens = line.split()
+            if tokens[-1] == '*':
+                pdb_id = tokens[-2].split('.')[1][1:]
+                my_prts.add(pdb_id)
 
+        idx2pdb[idx] = [_ for _ in my_prts]
     return idx2pdb
 
 
-def getMedoidsBoundLigs(idx2pdb):
-    drug2lig = {}
-    for idx, pdbs in idx2pdb.iteritems():
-        drug_ids = subsets[idx]
-        for drug_id in drug_ids:
-            similar_ligs = drug2similarlig[drug_id]
-            if len(similar_ligs) > 0:
-                myligs = []
-                for lig in similar_ligs:
-                    pdb_id = lig.split('.')[0]
-                    if pdb_id in pdbs:
-                        myligs.append(lig)
+with open(DSET_PATH, 'r') as f:
+    dset = cPickle.load(f)
 
-                if len(myligs) > 0:
-                    drug2lig[drug_id] = myligs
-    return drug2lig
-
-
+cluster_result_paths = glob.glob(CLUSTER_DIR + "/*clustered.clstr")
 idx2pdb = getPrtMedoids(cluster_result_paths)
-drug2lig = getMedoidsBoundLigs(idx2pdb)
 
-approved_ifn = "../dat/approved.txt"
-drugs = [_ for _ in pybel.readfile("sdf", approved_ifn)]
+idx2ligs = {}
+for idx in set(dset['ClusterId']):
+    similar_lig_ids = gatherLigIds(dset, idx)
+    prt_ids = [name.split('.')[0] for name in similar_lig_ids]
+    if idx in idx2pdb and len(idx2pdb[idx]) > 0:
+        intersect_prts = set(idx2pdb[idx]) & set(prt_ids)
+        if len(intersect_prts) > 0:
+            prt_bnd_ligs = set()
+            for lig_id in similar_lig_ids:
+                prt_id = lig_id.split('.')[0]
+                if prt_id in intersect_prts:
+                    prt_bnd_ligs.add(lig_id)
+            idx2ligs[idx] = prt_bnd_ligs
 
-diff_sz_ofn = "../dat/different_sz.txt"
-representative_ofn = "../dat/representative_drugs.txt"
-diff_of = open(diff_sz_ofn, 'w')
-representative_of = open(representative_ofn, 'w')
 
-tot_drugs = 0
-tot_ligs = 0
-for drug in drugs:
-    drugbank_id = drug.data['DRUGBANK_ID']
-    drug.removeh()
-    if 8 <= len(drug.atoms) <= 44:
-        if drugbank_id in drug2lig:
-            tot_drugs += 1
-            tot_ligs += len(drug2lig[drugbank_id])
-            ligs = drug2lig[drugbank_id]
-            for lig in ligs:
-                my_id = lig.split('.')[0]
-                dat_dir = os.path.join(DAT_DIR, my_id[1:3])
-                pdb_path = os.path.join(dat_dir, my_id + '.pdb')
-                lig_path = os.path.join(dat_dir, lig)
-                assert(os.path.exists(pdb_path))
-                assert(os.path.exists(lig_path))
+prt_bnd_ligs = []
+for _, row in dset.iterrows():
+    idx = row['ClusterId']
+    similar_ligs = set(row['SimilarLigs'].split())
+    to_append = ''
+    if idx in idx2ligs:
+        my_prt_bnd_ligs = similar_ligs & idx2ligs[idx]
+        if len(my_prt_bnd_ligs) > 0:
+            to_append = ' '.join([_ for _ in my_prt_bnd_ligs])
 
-                lig_sz = len([_ for _ in file(lig_path)])
-                if lig_sz != len(drug.atoms):
-                    diff_of.writelines("%s %s %d %d\n" % (drugbank_id, lig,
-                                                          len(drug.atoms), lig_sz))
+    prt_bnd_ligs.append(to_append)
 
-                representative_of.writelines("%s %s\n" % (drugbank_id, lig))
+dset['ProteinBoundLig'] = prt_bnd_ligs
+with open(DSET_PATH, 'w') as f:
+    cPickle.dump(dset, f)
 
-                inspect_dir = os.path.join(INSPECT_DIR, drugbank_id)
-                try:
-                    os.makedirs(inspect_dir)
-                except:
-                    pass
-                shutil.copy(pdb_path, inspect_dir)
-                shutil.copy(lig_path, inspect_dir)
-
-                drug_ofn = os.path.join(inspect_dir, drugbank_id + ".pdb")
-                drug.write("pdb", drug_ofn, overwrite=True)
-
-diff_of.close()
-representative_of.close()
-
-print tot_drugs
-print tot_ligs
+# for _, row in dset.iterrows():
+#     if row['ProteinBoundLig'] != '':
+#         ligs = row['ProteinBoundLig']
+#         for lig in ligs.split():
+#             print row['DRUGBANK_ID'], lig
