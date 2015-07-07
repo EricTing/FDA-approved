@@ -1,0 +1,187 @@
+,DRUGBANK_ID,ClusterId,SimilarLigs,ProteinBoundLig
+22,DB08906,13,3cldC.LG1.pdb 3cldA.LG1.pdb,3cldA.LG1.pdb
+38,DB00421,23,3vhuA.LG0.pdb 2oaxD.LG0.pdb 2ab2B.LG0.pdb 2ab2A.LG0.pdb 2oaxB.LG0.pdb,2ab2A.LG0.pdb
+39,DB04839,24,2oz7A.LG0.pdb,2oz7A.LG0.pdb
+48,DB00175,33,1hw9C.LG0.pdb 1hw8D.LG0.pdb 1hw9A.LG1.pdb 1hw9C.LG1.pdb 1hw8A.LG0.pdb 1hw8B.LG0.pdb 1hw9B.LG3.pdb 1hw8C.LG0.pdb 1hw8B.LG1.pdb 1hw9A.LG2.pdb 1hw9D.LG3.pdb 1hw8A.LG1.pdb 1hw9B.LG4.pdb 1hw9D.LG2.pdb 1hw8D.LG1.pdb 1hw8C.LG1.pdb,1hw8B.LG1.pdb 1hw8B.LG0.pdb
+49,DB00227,33,1cqpA.LG0.pdb 1cqpB.LG0.pdb,1cqpB.LG0.pdb
+56,DB00959,36,4p6xG.LG1.pdb 4p6xE.LG1.pdb 4p6xC.LG1.pdb 4p6xK.LG2.pdb 4p6xI.LG2.pdb 4p6xA.LG1.pdb,4p6xI.LG2.pdb
+57,DB00240,37,1p93A.LG2.pdb 1m2zA.LG3.pdb 1p93C.LG1.pdb 2vdyA.LG0.pdb 1p93G.LG1.pdb 4p6xG.LG1.pdb 4p6xE.LG1.pdb 2vdyB.LG0.pdb 4p6xC.LG1.pdb 1m2zC.LG0.pdb 4p6xK.LG2.pdb 4p6xI.LG2.pdb 4p6xA.LG1.pdb 1p93E.LG1.pdb,2vdyA.LG0.pdb 4p6xK.LG2.pdb
+62,DB00223,40,1p93A.LG2.pdb 1m2zA.LG3.pdb 1p93C.LG1.pdb 1p93G.LG1.pdb 1m2zC.LG0.pdb 1p93E.LG1.pdb,
+65,DB00547,40,1p93A.LG2.pdb 1m2zA.LG3.pdb 1p93C.LG1.pdb 1p93G.LG1.pdb 1m2zC.LG0.pdb 1p93E.LG1.pdb,
+74,DB00169,41,1j78B.LG2.pdb 3dl9A.LG2.pdb 3c6gA.LG2.pdb 3m7rA.LG0.pdb 3czhB.LG3.pdb 3c6gB.LG3.pdb 2hb8A.LG0.pdb 1db1A.LG0.pdb 3czhA.LG2.pdb 1ie9A.LG0.pdb 3dl9B.LG3.pdb 3a78A.LG0.pdb,1j78B.LG2.pdb 1ie9A.LG0.pdb 3dl9B.LG3.pdb
+77,DB01436,41,1j78B.LG2.pdb 3m7rA.LG0.pdb 1ie9A.LG0.pdb 3ax8A.LG0.pdb 2hb8A.LG0.pdb 1txiA.LG0.pdb 3auqA.LG0.pdb 1db1A.LG0.pdb 3aurA.LG0.pdb 3a78A.LG0.pdb,1j78B.LG2.pdb 1ie9A.LG0.pdb
+81,DB00755,43,2nnhB.LG1.pdb 4i9rA.LG0.pdb 1cbsA.LG0.pdb 2lbdA.LG0.pdb 2g7bA.LG0.pdb 3fc6A.LG0.pdb 3fc6C.LG0.pdb 2fr3A.LG0.pdb 4i9sA.LG0.pdb 4exzA.LG0.pdb 2nnhA.LG1.pdb 2nnhB.LG2.pdb 3cbsA.LG0.pdb 4m6sA.LG0.pdb 3lbdA.LG0.pdb 3falA.LG0.pdb 2g78A.LG0.pdb 3cwkA.LG0.pdb 4m7mA.LG0.pdb 2nnhA.LG2.pdb 4ruuA.LG0.pdb 3falC.LG0.pdb,2lbdA.LG0.pdb 4exzA.LG0.pdb 4i9rA.LG0.pdb 2nnhA.LG1.pdb 2nnhA.LG2.pdb
+83,DB00162,44,4eejB.LG0.pdb 4gkcB.LG0.pdb 1fm6C.LG2.pdb 1rlbE.LG0.pdb 1qabE.LG0.pdb 4eejA.LG0.pdb 4gkcA.LG0.pdb 4qypB.LG0.pdb 4cj6A.LG0.pdb 1rlbF.LG0.pdb 2rctA.LG0.pdb 1brpA.LG0.pdb 4qztA.LG0.pdb 4qynA.LG0.pdb 1rbpA.LG0.pdb 4qzuA.LG0.pdb 4qypC.LG0.pdb 1qabF.LG0.pdb 3hx3A.LG0.pdb 3bszF.LG0.pdb 4qzuC.LG0.pdb 4qypA.LG0.pdb 1fm6A.LG1.pdb 3bszE.LG0.pdb 3hy5A.LG0.pdb 4ruuA.LG0.pdb 4qzuB.LG0.pdb 1fm9A.LG1.pdb 4exzA.LG0.pdb 4qztB.LG0.pdb 4qynB.LG0.pdb 4edeB.LG0.pdb 4efgA.LG0.pdb,1qabE.LG0.pdb 2rctA.LG0.pdb 3hy5A.LG0.pdb 1fm6C.LG2.pdb
+84,DB00378,45,1a28B.LG0.pdb 1a28A.LG0.pdb,1a28A.LG0.pdb
+90,DB00294,50,1sqnA.LG0.pdb 3d90B.LG0.pdb 3d90A.LG0.pdb 2w8yB.LG0.pdb 1sqnB.LG0.pdb,
+152,DB01172,97,1knyA.LG1.pdb 1knyB.LG1.pdb 1knyA.LG2.pdb 1knyB.LG2.pdb,1knyB.LG1.pdb 1knyB.LG2.pdb
+166,DB00428,107,2w4xA.LG1.pdb,2w4xA.LG1.pdb
+188,DB00558,123,1a4gB.LG1.pdb 2f0zA.LG0.pdb,2f0zA.LG0.pdb 1a4gB.LG1.pdb
+192,DB01197,127,1uzfA.LG2.pdb 4dprA.LG0.pdb 4c2pA.LG1.pdb,4c2pA.LG1.pdb
+197,DB00143,132,8gssA.LG0.pdb 3pcvA.LG0.pdb 2vcqB.LG0.pdb 4ec0A.LG0.pdb 3km6B.LG0.pdb 3dd3B.LG1.pdb 1pkwA.LG0.pdb 2pnoA.LG0.pdb 3gurD.LG0.pdb 5gssB.LG0.pdb 1px6B.LG1.pdb 4acsD.LG0.pdb 1v40C.LG0.pdb 2vcrH.LG0.pdb 3gssA.LG0.pdb 3i6aF.LG0.pdb 2vd1A.LG0.pdb 2ab6A.LG0.pdb 2pnoE.LG1.pdb 3kmoA.LG0.pdb 2cvdD.LG0.pdb 19gsB.LG1.pdb 1iyiD.LG0.pdb 2vcvG.LG0.pdb 6gssB.LG0.pdb 1graA.LG3.pdb 2pnoI.LG0.pdb 2uuhA.LG1.pdb 3vi7C.LG0.pdb 2pnoE.LG0.pdb 3csiC.LG1.pdb 1usbB.LG0.pdb 2vd1B.LG1.pdb 3kxoB.LG0.pdb 4acsA.LG0.pdb 1dncA.LG1.pdb 1gseA.LG0.pdb 2flsA.LG0.pdb 3i6aC.LG0.pdb 3csiB.LG2.pdb 1aqwB.LG0.pdb 2a2rB.LG1.pdb 2vcvC.LG0.pdb 1v40B.LG0.pdb 2vcvP.LG0.pdb 1iyiB.LG0.pdb 2vcrA.LG0.pdb 3vi7D.LG0.pdb 1xw5B.LG0.pdb 3i6aH.LG0.pdb 2hgsA.LG1.pdb 3i6aE.LG0.pdb 2a2sB.LG1.pdb 2vcvI.LG0.pdb 1fw1A.LG1.pdb 2vcvM.LG0.pdb 11gsB.LG0.pdb 4ee0B.LG1.pdb 2vcrG.LG0.pdb 2vcvA.LG0.pdb 13gsA.LG0.pdb 7gssA.LG0.pdb 2ht9B.LG0.pdb 1px7B.LG1.pdb 1hnlA.LG0.pdb 4edzA.LG0.pdb 3ob7D.LG0.pdb 2vcrB.LG0.pdb 3csiD.LG2.pdb 4acsC.LG0.pdb 1zgnB.LG1.pdb 1pkwB.LG0.pdb 3lflA.LG0.pdb 1yj6B.LG0.pdb 2vcvB.LG0.pdb 5gssA.LG0.pdb 1hncD.LG0.pdb 3ie3A.LG0.pdb 2vcxC.LG0.pdb 2vcvD.LG0.pdb 2pnoL.LG1.pdb 1iyhB.LG0.pdb 2vcqA.LG0.pdb 4edzB.LG0.pdb 3vi7B.LG0.pdb 3dd3A.LG1.pdb 2cvdC.LG0.pdb 3dk4A.LG3.pdb 3q19A.LG0.pdb 1aqwC.LG0.pdb 3hjoB.LG0.pdb 2pnoG.LG1.pdb 1hnbA.LG0.pdb 4edyA.LG0.pdb 3i6aG.LG0.pdb 2vcxA.LG0.pdb 2vczD.LG0.pdb 2pnoB.LG0.pdb 2pnoK.LG1.pdb 2ab6B.LG0.pdb 1hnaA.LG0.pdb 3fr9A.LG0.pdb 1gseB.LG0.pdb 1graA.LG2.pdb 3i69B.LG0.pdb 3dk4A.LG2.pdb 2vcrD.LG0.pdb 2vd0D.LG0.pdb 4edzC.LG0.pdb 1tdiA.LG0.pdb 2a2rA.LG1.pdb 1hncA.LG0.pdb 2a2sA.LG1.pdb 2pnoJ.LG1.pdb 3vi5B.LG0.pdb 1b4qA.LG0.pdb 1qh5A.LG0.pdb 1px7A.LG1.pdb 3q19B.LG0.pdb 2vcrC.LG0.pdb 3i6aA.LG0.pdb 2wjuA.LG0.pdb 2pnoD.LG0.pdb 2vcvL.LG0.pdb 2cvdA.LG0.pdb 1md3B.LG1.pdb 2vcvK.LG0.pdb 1iyiA.LG0.pdb 3qagA.LG0.pdb 1aqwD.LG0.pdb 2vcvJ.LG0.pdb 2pnoJ.LG0.pdb 3cshA.LG2.pdb 2ab6C.LG0.pdb 2wjuH.LG0.pdb 1lbkB.LG1.pdb 1eemA.LG0.pdb 1aqwA.LG0.pdb 3bhjA.LG3.pdb 3gssB.LG0.pdb 1iyhA.LG0.pdb 2vd0B.LG1.pdb 2vcwB.LG0.pdb 4ee0A.LG1.pdb 3leoA.LG5.pdb 2vcvN.LG0.pdb 2vcwA.LG0.pdb 1zgnA.LG1.pdb 2pnoI.LG1.pdb 1px6A.LG1.pdb 3ie3B.LG0.pdb 4acsB.LG0.pdb 1yzxB.LG0.pdb 2vczA.LG0.pdb 3hjoA.LG0.pdb 1xw5A.LG0.pdb 1iyhC.LG0.pdb 2ht9A.LG1.pdb 3cshB.LG2.pdb 8gssC.LG0.pdb 8gssB.LG0.pdb 3gusB.LG0.pdb 1kbnB.LG0.pdb 11gsA.LG0.pdb 3i69C.LG0.pdb 2vcxD.LG0.pdb 2cvdB.LG0.pdb 2vcrF.LG0.pdb 3vi5A.LG0.pdb 2vcqD.LG0.pdb 2vcvH.LG0.pdb 1tdiB.LG0.pdb 2wjuD.LG0.pdb 1iyiC.LG0.pdb 1gsnA.LG1.pdb 2vcvF.LG0.pdb 2pnoD.LG1.pdb 1yzxA.LG0.pdb 1md4B.LG1.pdb 2vd1D.LG0.pdb 2pnoC.LG0.pdb 2vcvE.LG0.pdb 3b29A.LG0.pdb 3i6aD.LG0.pdb 2wjuC.LG0.pdb 2pnoH.LG1.pdb 3gurB.LG0.pdb 2vd1C.LG0.pdb 2ab6D.LG0.pdb 2pnoF.LG0.pdb 2wjuF.LG0.pdb 3bhmA.LG0.pdb 2wjuE.LG0.pdb 2pnoC.LG1.pdb 3vi7A.LG0.pdb 4ec0B.LG0.pdb 3ee2A.LG0.pdb 19gsA.LG1.pdb 4edzD.LG0.pdb 1yj6C.LG0.pdb 1kbnA.LG0.pdb 3i6aB.LG0.pdb 2vczC.LG0.pdb 1md3A.LG1.pdb 1xw6D.LG0.pdb 2pnoH.LG0.pdb 2pnoF.LG1.pdb 1lbkA.LG1.pdb 1greA.LG2.pdb 3lflB.LG0.pdb 1xw6C.LG0.pdb 1hnbB.LG0.pdb 2pnoL.LG0.pdb 4edyB.LG0.pdb 1greA.LG1.pdb 3fr9B.LG0.pdb 3gusA.LG0.pdb 2pnoB.LG1.pdb 3ob7A.LG0.pdb 2wjuB.LG0.pdb 1iyhD.LG0.pdb 2vczB.LG1.pdb 3kmoB.LG0.pdb 2vd0A.LG0.pdb 1v40D.LG0.pdb 3csiA.LG2.pdb 13gsB.LG0.pdb 1hncB.LG0.pdb 2vcxB.LG0.pdb 1hncC.LG0.pdb 2pnoK.LG0.pdb 2vcvO.LG0.pdb 1yj6A.LG0.pdb 2wjuG.LG0.pdb 2pnoG.LG0.pdb 2vcrE.LG0.pdb 3lflC.LG1.pdb 2vcqC.LG0.pdb 3kxoA.LG0.pdb 3i69D.LG0.pdb 7gssB.LG0.pdb 1md4A.LG1.pdb 2pnoA.LG1.pdb 3km6A.LG1.pdb 1xw6A.LG0.pdb 1v40A.LG0.pdb 2vcwD.LG0.pdb 1usbA.LG0.pdb 1xw6B.LG0.pdb 6gssA.LG0.pdb,1eemA.LG0.pdb 2vczC.LG0.pdb 2ht9B.LG0.pdb 1b4qA.LG0.pdb 1hncD.LG0.pdb 1fw1A.LG1.pdb 2hgsA.LG1.pdb 3dk4A.LG3.pdb 3ob7D.LG0.pdb 2a2sA.LG1.pdb 3dk4A.LG2.pdb 2uuhA.LG1.pdb 3fr9A.LG0.pdb 2wjuD.LG0.pdb 4ec0B.LG0.pdb 1yzxB.LG0.pdb 3bhjA.LG3.pdb 1hnlA.LG0.pdb 1qh5A.LG0.pdb 3qagA.LG0.pdb
+208,DB00125,141,4d1nB.LG0.pdb 4d1nD.LG0.pdb 4d1nA.LG0.pdb 4d1nC.LG0.pdb 1nsiC.LG2.pdb 1nsiD.LG3.pdb 1nsiA.LG2.pdb 4d1oA.LG0.pdb 4d1oB.LG0.pdb 1nsiB.LG3.pdb,1nsiB.LG3.pdb 4d1oB.LG0.pdb 4d1nC.LG0.pdb
+211,DB00172,144,5cyhA.LG0.pdb 4cyhA.LG1.pdb 3cyhA.LG1.pdb 4k87A.LG1.pdb 2cyhA.LG0.pdb,2cyhA.LG0.pdb 4k87A.LG1.pdb
+213,DB00583,145,1s5oA.LG0.pdb,1s5oA.LG0.pdb
+237,DB00128,164,4gdvB.LG0.pdb 4gdvA.LG0.pdb 4pvsB.LG0.pdb 4pvrB.LG0.pdb 4gdwB.LG0.pdb 4pvrA.LG0.pdb 4pvsA.LG0.pdb 4gdwA.LG0.pdb 2nz2A.LG0.pdb,4pvrA.LG0.pdb 2nz2A.LG0.pdb
+241,DB00134,166,1kq9A.LG0.pdb 1kq0A.LG0.pdb,1kq0A.LG0.pdb
+245,DB00302,170,1cebA.LG0.pdb 1cebB.LG0.pdb 1b2iA.LG0.pdb,1cebA.LG0.pdb 1b2iA.LG0.pdb
+246,DB00996,170,2coiB.LG1.pdb 2cojA.LG1.pdb 2coiA.LG1.pdb 2cojB.LG1.pdb,2cojA.LG1.pdb
+247,DB00123,171,3bjuA.LG0.pdb 4dpgG.LG0.pdb 3bjuC.LG0.pdb 3bjuD.LG0.pdb 3bjuB.LG0.pdb 4dpgB.LG0.pdb 4dpgE.LG0.pdb 4dpgH.LG0.pdb 4dpgA.LG0.pdb 4dpgC.LG0.pdb 4dpgD.LG0.pdb 4dpgF.LG0.pdb,4dpgB.LG0.pdb
+249,DB00513,171,1pk2A.LG0.pdb 1ceaA.LG0.pdb 2pk4A.LG0.pdb 3kivA.LG0.pdb 1hpkA.LG0.pdb 1ceaB.LG0.pdb,1ceaA.LG0.pdb 2pk4A.LG0.pdb 1pk2A.LG0.pdb
+250,DB00149,172,1abwA.LG2.pdb 1abwA.LG1.pdb,1abwA.LG2.pdb 1abwA.LG1.pdb
+253,DB00130,173,3vp0A.LG0.pdb,3vp0A.LG0.pdb
+259,DB00742,177,1m2wB.LG1.pdb 1m2wA.LG1.pdb,1m2wA.LG1.pdb
+261,DB01586,178,1ihiA.LG1.pdb 1ihiB.LG1.pdb,1ihiB.LG1.pdb
+267,DB00273,181,3hkuA.LG0.pdb,3hkuA.LG0.pdb
+286,DB00727,198,4fr8A.LG0.pdb,4fr8A.LG0.pdb
+309,DB00630,218,4kquA.LG1.pdb 2f92A.LG0.pdb,2f92A.LG0.pdb
+322,DB01216,229,3g1rB.LG1.pdb,3g1rB.LG1.pdb
+337,DB00710,237,2f94A.LG0.pdb,2f94A.LG0.pdb
+347,DB00127,245,3c6mA.LG0.pdb 3c6mC.LG0.pdb 3c6mB.LG0.pdb 3c6mD.LG0.pdb,3c6mB.LG0.pdb
+373,DB00843,268,4ey7A.LG1.pdb 4ey7B.LG1.pdb,4ey7B.LG1.pdb
+379,DB00674,271,4ey6A.LG1.pdb 4ey6B.LG1.pdb,4ey6B.LG1.pdb
+394,DB00866,278,3nyaA.LG2.pdb,3nyaA.LG2.pdb
+417,DB00775,300,2vdmB.LG0.pdb 2vdmA.LG2.pdb,2vdmB.LG0.pdb 2vdmA.LG2.pdb
+433,DB00163,315,1oipA.LG0.pdb 1r5lA.LG0.pdb,1r5lA.LG0.pdb
+443,DB00783,323,4j24B.LG1.pdb 3q95A.LG1.pdb 3hm1B.LG1.pdb 3l03B.LG1.pdb 1qktA.LG0.pdb 1ereE.LG0.pdb 2ylqA.LG0.pdb 1ereC.LG0.pdb 1ereA.LG0.pdb 1lhoA.LG0.pdb 1g50B.LG0.pdb 4pm1A.LG0.pdb 3hlvB.LG1.pdb 1lhnA.LG0.pdb 1ereB.LG0.pdb 4k7aA.LG0.pdb 2q7iA.LG1.pdb 1kdkA.LG0.pdb 4j24A.LG1.pdb 1a52A.LG0.pdb 4j26A.LG1.pdb 3ollA.LG1.pdb 2b1zB.LG1.pdb 2q7jA.LG1.pdb 1f5fA.LG0.pdb 2ylpA.LG0.pdb 1g50A.LG0.pdb 1pcgA.LG1.pdb 2z4jA.LG1.pdb 1kdmA.LG0.pdb 1ereD.LG0.pdb 1sqnA.LG0.pdb 1gwrB.LG1.pdb 2b1zA.LG1.pdb 3uudB.LG1.pdb 1gwrA.LG1.pdb 2ocfA.LG0.pdb 1pcgB.LG1.pdb 2q7lA.LG1.pdb 1qkuC.LG0.pdb 2yloA.LG0.pdb 3olsB.LG1.pdb 1iolA.LG0.pdb 4pm1B.LG0.pdb 1lhuA.LG0.pdb 1a52B.LG0.pdb 4hlwA.LG0.pdb 2yjaB.LG1.pdb 1qkuB.LG0.pdb 4j26C.LG1.pdb 2q7kA.LG1.pdb 1ereF.LG0.pdb 1g50C.LG0.pdb 3hm1A.LG1.pdb 1d2sA.LG0.pdb 1lhwA.LG0.pdb 4j24D.LG1.pdb 3uudA.LG1.pdb 1qkuA.LG0.pdb 1xq3A.LG0.pdb 3l03A.LG2.pdb 3ollB.LG1.pdb 3olsA.LG1.pdb 4j24C.LG1.pdb 3hlvA.LG1.pdb 1sqnB.LG0.pdb 2ao6A.LG1.pdb 3q95B.LG1.pdb,4pm1A.LG0.pdb 1iolA.LG0.pdb 1sqnB.LG0.pdb 3ollA.LG1.pdb 2yloA.LG0.pdb 1lhnA.LG0.pdb 3q95B.LG1.pdb
+446,DB00655,324,3q95A.LG1.pdb 3hm1B.LG1.pdb 3l03B.LG1.pdb 1qktA.LG0.pdb 1ereE.LG0.pdb 1ereC.LG0.pdb 1ereA.LG0.pdb 1g50B.LG0.pdb 4pm1A.LG0.pdb 3hlvB.LG1.pdb 1ereB.LG0.pdb 2q7iA.LG1.pdb 1a52A.LG0.pdb 2q7jA.LG1.pdb 1g50A.LG0.pdb 1ereF.LG0.pdb 1ereD.LG0.pdb 1sqnA.LG0.pdb 1gwrB.LG1.pdb 2b1zA.LG1.pdb 3uudB.LG1.pdb 2ocfA.LG0.pdb 1pcgB.LG1.pdb 2q7lA.LG1.pdb 4k7aA.LG0.pdb 1qkuC.LG0.pdb 1pcgA.LG1.pdb 4pm1B.LG0.pdb 1iolA.LG0.pdb 1a52B.LG0.pdb 4hlwA.LG0.pdb 2yjaB.LG1.pdb 1qkuB.LG0.pdb 1gwrA.LG1.pdb 1g50C.LG0.pdb 3hm1A.LG1.pdb 3uudA.LG1.pdb 1qkuA.LG0.pdb 3hlvA.LG1.pdb 1xq3A.LG0.pdb 3l03A.LG2.pdb 2b1zB.LG1.pdb 2ao6A.LG1.pdb 1sqnB.LG0.pdb 2q7kA.LG1.pdb 3q95B.LG1.pdb,4pm1A.LG0.pdb 2q7jA.LG1.pdb 1sqnB.LG0.pdb 1iolA.LG0.pdb 3q95B.LG1.pdb
+454,DB00481,331,2r6yB.LG0.pdb 2r6wB.LG0.pdb 1errA.LG0.pdb 2qxsB.LG0.pdb 2jfaB.LG1.pdb 2qxsA.LG0.pdb 1errB.LG0.pdb 2r6yA.LG0.pdb 2jfaA.LG1.pdb 2r6wA.LG0.pdb,2qxsA.LG0.pdb
+455,DB00255,332,3erdA.LG1.pdb 1s9pC.LG0.pdb 1s9pA.LG0.pdb 1tt6B.LG0.pdb 1tz8C.LG0.pdb 1s9pD.LG0.pdb 1tt6A.LG0.pdb 3erdB.LG1.pdb 1tz8D.LG0.pdb 1s9pB.LG0.pdb 1tz8A.LG0.pdb 1tz8B.LG0.pdb,3erdA.LG1.pdb 1tz8C.LG0.pdb 1s9pD.LG0.pdb
+456,DB00890,332,3erdA.LG1.pdb 3erdB.LG1.pdb,3erdA.LG1.pdb
+457,DB00539,333,1ya4B.LG1.pdb 1ya4C.LG2.pdb 2bj4A.LG1.pdb 3ertA.LG0.pdb 2jf9C.LG1.pdb 2bj4B.LG1.pdb 1ya4B.LG2.pdb 1ya4A.LG4.pdb 1ya4C.LG3.pdb 1ya4A.LG3.pdb 2jf9B.LG1.pdb 2jf9A.LG2.pdb,1ya4B.LG2.pdb 3ertA.LG0.pdb 1ya4B.LG1.pdb
+467,DB00788,341,2vdbA.LG6.pdb 4jq1A.LG0.pdb 4jq1B.LG1.pdb,2vdbA.LG6.pdb 4jq1A.LG0.pdb
+468,DB00818,342,1e7aA.LG0.pdb 1e7aA.LG1.pdb 1e7aB.LG0.pdb 1e7aB.LG1.pdb,1e7aA.LG1.pdb 1e7aA.LG0.pdb
+483,DB00722,355,2c6nB.LG4.pdb 2c6nA.LG3.pdb 1o86A.LG0.pdb,1o86A.LG0.pdb
+490,DB00905,362,2f38A.LG1.pdb,2f38A.LG1.pdb
+573,DB01037,424,2bybA.LG1.pdb 2bybB.LG1.pdb,2bybA.LG1.pdb
+587,DB00135,432,1q11A.LG0.pdb 4qbtA.LG1.pdb,4qbtA.LG1.pdb
+592,DB06262,435,6pahA.LG0.pdb,6pahA.LG0.pdb
+593,DB00120,436,3l4gO.LG0.pdb 3l4gC.LG0.pdb 3hfvA.LG0.pdb 3l4gM.LG0.pdb 3l4gK.LG0.pdb 3l4gA.LG0.pdb 3l4gG.LG0.pdb 3l4gE.LG0.pdb 3l4gI.LG0.pdb,3l4gC.LG0.pdb 3hfvA.LG0.pdb
+604,DB00368,442,4pahA.LG0.pdb 5pahA.LG0.pdb,4pahA.LG0.pdb
+605,DB00988,443,2qmzB.LG1.pdb 2qmzB.LG3.pdb 4a7vA.LG0.pdb 2qmzA.LG3.pdb 2qmzA.LG1.pdb,2qmzB.LG3.pdb 2qmzB.LG1.pdb 4a7vA.LG0.pdb
+617,DB01151,451,2q72A.LG6.pdb 2qb4A.LG7.pdb 4mmaA.LG0.pdb 2qjuA.LG5.pdb 2q6hA.LG6.pdb 2q72A.LG7.pdb 2qeiA.LG6.pdb 2qb4A.LG6.pdb 2qeiA.LG7.pdb 2q6hA.LG7.pdb,2q72A.LG6.pdb 2q72A.LG7.pdb
+618,DB01242,452,2q72A.LG6.pdb 2qb4A.LG7.pdb 4mmaA.LG0.pdb 2qjuA.LG5.pdb 2q6hA.LG6.pdb 2q72A.LG7.pdb 2qeiA.LG6.pdb 2qb4A.LG6.pdb 2qeiA.LG7.pdb 2q6hA.LG7.pdb,2q72A.LG6.pdb 2q72A.LG7.pdb
+627,DB01113,459,2weyB.LG0.pdb 2weyA.LG0.pdb,2weyA.LG0.pdb
+630,DB00440,462,2w3aB.LG1.pdb 1yhoA.LG1.pdb 3s3vA.LG0.pdb 3s3vA.LG1.pdb 3n0hA.LG0.pdb 3n0hA.LG1.pdb 2w3aA.LG1.pdb,2w3aA.LG1.pdb
+637,DB00712,468,1r9oA.LG1.pdb 3r94A.LG1.pdb,1r9oA.LG1.pdb 3r94A.LG1.pdb
+642,DB01050,473,2bxgB.LG1.pdb 2bxgB.LG0.pdb 3r8gA.LG1.pdb 2bxgA.LG1.pdb 2bxgA.LG0.pdb,2bxgB.LG1.pdb 3r8gA.LG1.pdb 2bxgB.LG0.pdb
+646,DB00586,477,3cfqB.LG0.pdb 3cfqA.LG0.pdb 1dvxA.LG0.pdb,3cfqA.LG0.pdb
+692,DB00291,513,3csjB.LG1.pdb,3csjB.LG1.pdb
+696,DB00446,517,2jklB.LG2.pdb 1usqD.LG0.pdb 2xatA.LG0.pdb 2jknE.LG0.pdb 1qhyA.LG2.pdb 2jkjD.LG0.pdb 3claA.LG0.pdb 2jknA.LG0.pdb 2jkjC.LG1.pdb 2jknC.LG0.pdb 2jkjE.LG0.pdb 1usqF.LG0.pdb 2jknB.LG0.pdb 2jklA.LG1.pdb 1qhyA.LG1.pdb 4claA.LG0.pdb 1usqB.LG0.pdb 1claA.LG0.pdb 1usqE.LG0.pdb 2jklE.LG1.pdb 2jknF.LG0.pdb 1qhsA.LG1.pdb 2jklD.LG2.pdb 2jklC.LG1.pdb 1usqA.LG0.pdb 2jkjA.LG0.pdb 1qhsA.LG0.pdb 2jkjF.LG1.pdb 1usqC.LG0.pdb 2jklF.LG2.pdb 2jkjB.LG0.pdb 2jknD.LG0.pdb,2xatA.LG0.pdb 4claA.LG0.pdb 1qhsA.LG0.pdb 2jknF.LG0.pdb 1qhsA.LG1.pdb
+713,DB00184,530,4ejgA.LG1.pdb 4ejgC.LG1.pdb 4ejjC.LG1.pdb 4ejgD.LG1.pdb 4ejjA.LG1.pdb 4ejjB.LG1.pdb 4ejjD.LG0.pdb 4ejgB.LG1.pdb,4ejgB.LG1.pdb
+717,DB01367,534,2c73B.LG1.pdb 2bk4A.LG1.pdb 2c72A.LG1.pdb 2c76A.LG1.pdb 2xfqB.LG1.pdb 1s2qB.LG1.pdb 2c66A.LG1.pdb 2xfqA.LG1.pdb 2c66B.LG1.pdb 2c75A.LG1.pdb 2c72B.LG1.pdb 2c76B.LG1.pdb 2c73A.LG1.pdb 2bk4B.LG1.pdb 2c75B.LG1.pdb 1s2qA.LG1.pdb,2xfqA.LG1.pdb
+726,DB00321,541,3rzeA.LG1.pdb 3rzeA.LG0.pdb,3rzeA.LG1.pdb 3rzeA.LG0.pdb
+741,DB00861,550,2bxeA.LG0.pdb 2bxeB.LG2.pdb 1y1dA.LG0.pdb 2bxeB.LG0.pdb 2bxeA.LG1.pdb 3d2tA.LG0.pdb 3d2tB.LG0.pdb 1y1dB.LG0.pdb 4i89A.LG0.pdb 2bxeA.LG2.pdb 4i89B.LG0.pdb 2bxeB.LG1.pdb,4i89B.LG0.pdb 2bxeA.LG1.pdb 2bxeA.LG0.pdb 2bxeA.LG2.pdb
+766,DB01626,571,1gosA.LG1.pdb 1gosB.LG1.pdb,1gosA.LG1.pdb
+785,DB00266,588,2f1oG.LG2.pdb 4cetA.LG1.pdb 2f1oC.LG2.pdb 2f1oH.LG2.pdb 2f1oH.LG0.pdb 2f1oB.LG2.pdb 2f1oE.LG0.pdb 2f1oA.LG2.pdb 2f1oG.LG0.pdb 2f1oB.LG0.pdb 2f1oA.LG0.pdb 2f1oF.LG1.pdb 2f1oE.LG1.pdb 2f1oF.LG0.pdb 2f1oC.LG0.pdb 2f1oD.LG2.pdb 2f1oD.LG0.pdb,2f1oG.LG0.pdb 2f1oG.LG2.pdb
+786,DB00946,588,1og5A.LG1.pdb 1og5B.LG1.pdb 1ha2A.LG6.pdb 2bxdA.LG0.pdb 1h9zA.LG6.pdb 2bxdB.LG0.pdb,1og5B.LG1.pdb 1h9zA.LG6.pdb
+787,DB00682,589,1og5B.LG1.pdb 1ha2A.LG6.pdb 2bxdA.LG0.pdb 1h9zA.LG6.pdb 2bxdB.LG0.pdb 1og5A.LG1.pdb,1og5A.LG1.pdb 1ha2A.LG6.pdb
+792,DB01142,593,3rzeA.LG0.pdb 3rzeA.LG1.pdb,3rzeA.LG1.pdb 3rzeA.LG0.pdb
+816,DB00278,617,4hfpD.LG0.pdb 4hfpB.LG0.pdb 4rn6A.LG0.pdb 1dwcB.LG1.pdb 4rn6B.LG0.pdb,4rn6A.LG0.pdb
+821,DB00412,622,1zgyA.LG1.pdb 4o8fA.LG0.pdb 2prgB.LG0.pdb 4o8fB.LG0.pdb 1fm6D.LG1.pdb 2prgA.LG0.pdb 1fm6B.LG1.pdb 4emaA.LG0.pdb 3cs8A.LG1.pdb,1fm6B.LG1.pdb
+822,DB01132,623,2xkwB.LG0.pdb 2xkwA.LG0.pdb,2xkwA.LG0.pdb
+823,DB00328,624,3adsB.LG0.pdb 4dbwB.LG1.pdb 3adsA.LG0.pdb 4dbwB.LG2.pdb 2bxmA.LG8.pdb 1dcyA.LG0.pdb 4dbwA.LG2.pdb 3adxB.LG0.pdb 4dbwA.LG1.pdb 4jq4B.LG1.pdb 2bxqA.LG6.pdb 2bxqA.LG8.pdb 3adsA.LG1.pdb 2bxmA.LG7.pdb 3adxA.LG1.pdb 2bxkA.LG6.pdb 2zb8A.LG1.pdb 4jq4A.LG0.pdb,2bxkA.LG6.pdb 1dcyA.LG0.pdb 2zb8A.LG1.pdb 4dbwB.LG1.pdb 4dbwB.LG2.pdb 3adxA.LG1.pdb
+833,DB00150,632,3fhjD.LG0.pdb 3fi0K.LG0.pdb 3fi0H.LG0.pdb 3fi0E.LG0.pdb 3fi0R.LG0.pdb 3fi0Q.LG0.pdb 1mb2D.LG0.pdb 3fhjE.LG0.pdb 3fi0F.LG0.pdb 3fi0G.LG0.pdb 3fi0N.LG0.pdb 2azxD.LG0.pdb 3fi0B.LG0.pdb 3fi0A.LG0.pdb 3fi0L.LG0.pdb 2dr2B.LG0.pdb 2azxC.LG0.pdb 2qujB.LG0.pdb 3fhjA.LG0.pdb 2azxC.LG1.pdb 3fhjF.LG0.pdb 3fi0P.LG0.pdb 1mb2C.LG0.pdb 1mb2A.LG0.pdb 1mb2E.LG0.pdb 1mb2F.LG0.pdb 3fi0I.LG0.pdb 3fi0J.LG0.pdb 3fi0D.LG0.pdb 3fi0O.LG0.pdb 3fhjB.LG0.pdb 3fi0M.LG0.pdb 2akeB.LG0.pdb 3fi0C.LG0.pdb 1mb2B.LG0.pdb 3fhjC.LG0.pdb,2azxD.LG0.pdb 3fhjC.LG0.pdb 1mb2C.LG0.pdb
+834,DB02959,633,1yiaA.LG0.pdb 2a4mC.LG0.pdb 1yi8C.LG0.pdb,2a4mC.LG0.pdb
+837,DB01065,636,2qx4B.LG1.pdb 2qx6A.LG3.pdb 2qwxA.LG3.pdb 2qx8B.LG1.pdb 2qwxA.LG1.pdb 2qx6B.LG3.pdb 2qx4A.LG3.pdb 2qx9A.LG1.pdb 2qx4B.LG3.pdb 2qx9A.LG2.pdb 2qwxB.LG3.pdb 2qx6B.LG1.pdb 2qx4A.LG1.pdb 2qwxB.LG1.pdb 2qx9B.LG2.pdb 2qx6A.LG1.pdb 2qx8A.LG1.pdb 2qx9B.LG1.pdb,2qwxB.LG3.pdb 2qwxB.LG1.pdb
+839,DB00908,637,4wnuA.LG1.pdb 4wnuD.LG1.pdb 4wnvB.LG1.pdb 4wnuB.LG1.pdb 4wnvD.LG1.pdb 4wnvC.LG1.pdb 4wnvA.LG1.pdb 4wnuC.LG1.pdb,4wnvA.LG1.pdb
+864,DB00212,661,3d91A.LG0.pdb 3d91B.LG0.pdb,3d91B.LG0.pdb
+870,DB00820,667,1uduA.LG0.pdb 1xozA.LG0.pdb 1uduB.LG0.pdb,1xozA.LG0.pdb
+902,DB04835,697,4mbsA.LG0.pdb 4mbsB.LG1.pdb,4mbsB.LG1.pdb
+907,DB01244,702,1lxfA.LG1.pdb,1lxfA.LG1.pdb
+909,DB00480,704,4tz4B.LG0.pdb,4tz4B.LG0.pdb
+910,DB08910,704,4tz4B.LG0.pdb,4tz4B.LG0.pdb
+940,DB01200,729,3ua1A.LG1.pdb,3ua1A.LG1.pdb
+965,DB01051,746,4uroD.LG0.pdb 4uroA.LG0.pdb 4uroB.LG0.pdb 4uroC.LG0.pdb,4uroA.LG0.pdb
+976,DB00605,757,3rx2A.LG1.pdb 3rx4A.LG1.pdb 4ikjA.LG0.pdb 4jq2A.LG0.pdb 3rx3A.LG1.pdb 3u2cA.LG4.pdb 4ikkA.LG0.pdb 4ikjB.LG0.pdb 4ikkB.LG0.pdb 4iklB.LG0.pdb 4iklA.LG0.pdb,4jq2A.LG0.pdb 4iklA.LG0.pdb 3rx3A.LG1.pdb
+984,DB01095,764,1hwiA.LG2.pdb 1hwiD.LG1.pdb 1hwiC.LG0.pdb 1hwiC.LG1.pdb 1hwiB.LG1.pdb 1hwiA.LG1.pdb 1hwiD.LG2.pdb 1hwiB.LG2.pdb,1hwiB.LG1.pdb 1hwiB.LG2.pdb
+987,DB01098,767,1hwlC.LG1.pdb 1hwlA.LG1.pdb 1hwlC.LG0.pdb 1hwlB.LG2.pdb 1hwlB.LG1.pdb 1hwlD.LG1.pdb 1hwlD.LG2.pdb 1hwlA.LG2.pdb,1hwlA.LG1.pdb 1hwlA.LG2.pdb
+990,DB00471,770,2nniA.LG1.pdb,2nniA.LG1.pdb
+999,DB00381,774,3ua5B.LG1.pdb 3ua5B.LG2.pdb 3ua5A.LG1.pdb 3ua5A.LG2.pdb,3ua5A.LG2.pdb 3ua5A.LG1.pdb
+1000,DB01023,774,2nnjA.LG1.pdb,2nnjA.LG1.pdb
+1008,DB00834,781,3h52D.LG0.pdb 3h52C.LG0.pdb 3h52B.LG1.pdb 1nhzA.LG0.pdb 2w8yA.LG0.pdb 3h52A.LG1.pdb,3h52B.LG1.pdb 2w8yA.LG0.pdb
+1010,DB00170,783,2qr2A.LG2.pdb 2qr2B.LG3.pdb 2qr2B.LG2.pdb,2qr2B.LG2.pdb 2qr2B.LG3.pdb
+1016,DB05812,789,4nkvD.LG1.pdb 4nkvB.LG1.pdb 4nkvA.LG1.pdb 3rukB.LG1.pdb 3rukD.LG1.pdb 4nkvC.LG1.pdb 3rukA.LG1.pdb 3rukC.LG1.pdb,3rukD.LG1.pdb
+1067,DB00417,817,2z71A.LG0.pdb 2z71B.LG0.pdb,2z71B.LG0.pdb
+1083,DB00456,826,1kvlA.LG1.pdb,1kvlA.LG1.pdb
+1130,DB00232,860,1zgfA.LG0.pdb,1zgfA.LG0.pdb
+1137,DB00703,863,1yddA.LG0.pdb 3w6hB.LG2.pdb 1zsbA.LG0.pdb 3w6hA.LG1.pdb 4k0zA.LG0.pdb 1ydbA.LG0.pdb 4lu3A.LG0.pdb 3v2jA.LG0.pdb 2h4nA.LG0.pdb 3czvA.LG0.pdb 3v2mA.LG0.pdb 3ml5A.LG0.pdb 1bzmA.LG0.pdb 3dc3A.LG0.pdb 4g0cA.LG0.pdb 1azmA.LG0.pdb 3hs4A.LG1.pdb 3hs4A.LG2.pdb 3dcsA.LG0.pdb 3czvB.LG0.pdb 3hs4A.LG3.pdb 4k0sA.LG0.pdb 1ydaA.LG0.pdb,3ml5A.LG0.pdb 4lu3A.LG0.pdb 1bzmA.LG0.pdb 3czvB.LG0.pdb 3dc3A.LG0.pdb
+1138,DB00819,864,1yddA.LG0.pdb 3w6hB.LG2.pdb 1zsbA.LG0.pdb 3w6hA.LG1.pdb 4k0zA.LG0.pdb 4lu3A.LG0.pdb 1ydbA.LG0.pdb 3v2jA.LG0.pdb 2h4nA.LG0.pdb 3czvA.LG0.pdb 3v2mA.LG0.pdb 3ml5A.LG0.pdb 1bzmA.LG0.pdb 3dc3A.LG0.pdb 4g0cA.LG0.pdb 1azmA.LG0.pdb 3hs4A.LG1.pdb 3hs4A.LG2.pdb 3dcsA.LG0.pdb 3czvB.LG0.pdb 3hs4A.LG3.pdb 4k0sA.LG0.pdb 1ydaA.LG0.pdb,3ml5A.LG0.pdb 4lu3A.LG0.pdb 1bzmA.LG0.pdb 3czvB.LG0.pdb 3dc3A.LG0.pdb
+1144,DB00173,870,4kqfA.LG0.pdb 1mudA.LG1.pdb 1jh8A.LG0.pdb 1z5nB.LG1.pdb 1cb0A.LG0.pdb 1s2dC.LG0.pdb 1yxmB.LG0.pdb 1hqcA.LG0.pdb 1zn7B.LG1.pdb 1z5nA.LG1.pdb 1jysB.LG0.pdb 1s2dA.LG0.pdb 1hqcB.LG0.pdb 1weiA.LG0.pdb 1mudA.LG2.pdb 1jysA.LG0.pdb 1zn7A.LG2.pdb 1s2dB.LG0.pdb,1mudA.LG2.pdb 1mudA.LG1.pdb 1z5nA.LG1.pdb 1s2dC.LG0.pdb 1yxmB.LG0.pdb 1jh8A.LG0.pdb 1hqcA.LG0.pdb 1cb0A.LG0.pdb 1zn7A.LG2.pdb
+1147,DB00544,873,3nbqA.LG0.pdb 3nbqC.LG0.pdb 3nbqD.LG0.pdb 3nbqB.LG0.pdb,3nbqB.LG0.pdb
+1152,DB00594,878,1f5lA.LG0.pdb,1f5lA.LG0.pdb
+1156,DB00399,882,2f9kA.LG0.pdb 3n46A.LG1.pdb 4p0wA.LG1.pdb 3n45A.LG1.pdb 4kfaA.LG0.pdb 2f8cA.LG0.pdb 4kq5A.LG0.pdb 4p0vA.LG0.pdb 1zw5A.LG1.pdb 2f8zA.LG1.pdb,4p0vA.LG0.pdb
+1158,DB08604,883,1c14B.LG1.pdb 1qsgG.LG2.pdb 2pd3A.LG1.pdb 1qsgE.LG2.pdb 1qsgF.LG2.pdb 1qsgA.LG2.pdb 1qsgD.LG2.pdb 2pd4D.LG1.pdb 1qsgC.LG2.pdb 3pjfA.LG1.pdb 3gr6D.LG1.pdb 1qsgH.LG2.pdb 2pd4A.LG1.pdb 3pjdA.LG1.pdb 1d8aB.LG1.pdb 3gr6A.LG1.pdb 1d8aA.LG1.pdb 2pd3D.LG1.pdb 1qg6B.LG1.pdb 3gr6B.LG1.pdb 3pjeA.LG1.pdb 3pjdB.LG1.pdb 1qg6D.LG1.pdb 1qg6C.LG1.pdb 2pd4B.LG1.pdb 1qg6A.LG1.pdb 1qsgB.LG2.pdb 2qioA.LG1.pdb 2pd4C.LG1.pdb 2qioD.LG1.pdb 1c14A.LG1.pdb 3pjfB.LG1.pdb 2qioB.LG1.pdb 2qioC.LG1.pdb 2pd3C.LG1.pdb 2pd3B.LG1.pdb 3pjeB.LG1.pdb 3gr6C.LG1.pdb,2qioD.LG1.pdb 1qsgG.LG2.pdb 2pd4C.LG1.pdb 3gr6B.LG1.pdb
+1159,DB00553,884,1z11A.LG1.pdb 1z11B.LG1.pdb 1z11D.LG1.pdb 1z11C.LG1.pdb,1z11A.LG1.pdb
+1170,DB00259,894,1aj0A.LG1.pdb,1aj0A.LG1.pdb
+1172,DB01144,896,2pouA.LG0.pdb,2pouA.LG0.pdb
+1173,DB01123,897,1bcuB.LG1.pdb 2v57A.LG0.pdb 1qvtC.LG0.pdb 2v57C.LG0.pdb 1qvuC.LG1.pdb,1qvtC.LG0.pdb 1bcuB.LG1.pdb 2v57C.LG0.pdb
+1180,DB00909,904,3po7A.LG1.pdb 3po7B.LG1.pdb,3po7A.LG1.pdb
+1188,DB00709,911,2noaA.LG1.pdb 2no6B.LG1.pdb 2noaB.LG1.pdb 2no6A.LG1.pdb,2noaA.LG1.pdb
+1196,DB00441,917,2no0B.LG1.pdb 2no0A.LG1.pdb 1p62A.LG1.pdb,
+1197,DB00943,917,2a30B.LG0.pdb 2no1B.LG1.pdb 2a30A.LG0.pdb 2no7A.LG1.pdb 2a2zB.LG0.pdb 1p60B.LG1.pdb 2a2zD.LG0.pdb 2a30D.LG0.pdb 2a30C.LG0.pdb 1p61A.LG1.pdb 2a2zA.LG0.pdb 2a2zC.LG0.pdb 2no1A.LG1.pdb 1p60A.LG1.pdb 2no7B.LG1.pdb,2no7A.LG1.pdb
+1198,DB00987,917,2a30B.LG0.pdb 2no1B.LG1.pdb 2a2zA.LG0.pdb 2no7B.LG1.pdb 2a2zB.LG0.pdb 2a2zD.LG0.pdb 2a30D.LG0.pdb 2no1A.LG1.pdb 1p5zA.LG0.pdb 1p61A.LG1.pdb 2a30A.LG0.pdb 1p60A.LG1.pdb 2no7A.LG1.pdb 2a30C.LG0.pdb 2a2zC.LG0.pdb 1p60B.LG1.pdb,2no7A.LG1.pdb
+1203,DB00495,919,3b9mA.LG6.pdb 3b9lA.LG7.pdb 3b9lA.LG8.pdb,3b9lA.LG7.pdb 3b9lA.LG8.pdb
+1206,DB00118,922,4ndnA.LG1.pdb 2obvA.LG0.pdb 3bwyA.LG0.pdb 4kttC.LG0.pdb 4uuuA.LG0.pdb 4pcuA.LG2.pdb 4pcuB.LG2.pdb 4kttA.LG0.pdb 4ndnC.LG1.pdb 3bwmA.LG0.pdb 4uuuB.LG0.pdb 4kttB.LG0.pdb 4uuuA.LG1.pdb 4kttD.LG0.pdb 4ndnB.LG1.pdb 3a7eA.LG0.pdb 2p02A.LG0.pdb 4ndnD.LG1.pdb,4ndnC.LG1.pdb 2obvA.LG0.pdb 3bwyA.LG0.pdb 4pcuB.LG2.pdb
+1209,DB00131,925,4cfeE.LG0.pdb 3fi0H.LG1.pdb 3fi0K.LG1.pdb 1rorA.LG0.pdb 2y8qC.LG1.pdb 4cffE.LG1.pdb 3fi0Q.LG1.pdb 3fi0D.LG1.pdb 4rerC.LG0.pdb 4cfhD.LG0.pdb 3fi0C.LG1.pdb 1ftaC.LG0.pdb 3fhjD.LG1.pdb 3fi0A.LG1.pdb 1kpfA.LG0.pdb 4cfeE.LG1.pdb 1ftaB.LG0.pdb 1ro9B.LG0.pdb 4cfhD.LG1.pdb 4eaiC.LG1.pdb 1zn8A.LG0.pdb 4rewC.LG1.pdb 4cfeE.LG2.pdb 3tw2A.LG0.pdb 4eaiC.LG0.pdb 4cffF.LG1.pdb 1yxuA.LG0.pdb 4rewC.LG0.pdb 1rorB.LG0.pdb 3fi0F.LG1.pdb 1ptwC.LG0.pdb 3fhjE.LG1.pdb 2y8lC.LG2.pdb 1tb7B.LG0.pdb 4eajC.LG2.pdb 1tb5B.LG0.pdb 1oreA.LG0.pdb 4cfeF.LG0.pdb 3fhjF.LG1.pdb 4cfeF.LG2.pdb 1yxuD.LG0.pdb 3fi0P.LG1.pdb 3fi0B.LG1.pdb 4rerC.LG2.pdb 1ftaA.LG0.pdb 4cffE.LG0.pdb 1zn9B.LG0.pdb 4rerC.LG1.pdb 2y94D.LG1.pdb 1xqsC.LG0.pdb 1yxuC.LG0.pdb 3fi0O.LG1.pdb 4cffF.LG0.pdb 2v8qC.LG0.pdb 2v8qC.LG1.pdb 1t9gF.LG0.pdb 1ptwD.LG0.pdb 1ptwA.LG0.pdb 4eaiC.LG2.pdb 3fi0M.LG1.pdb 3fhjA.LG1.pdb 3fi0G.LG1.pdb 3fhjC.LG1.pdb 1zn8B.LG0.pdb 3fi0L.LG1.pdb 2y94D.LG0.pdb 3fi0J.LG1.pdb 3fi0N.LG1.pdb 2v9jC.LG2.pdb 3fi0R.LG1.pdb 2v8qC.LG2.pdb 3fi0E.LG1.pdb 1tb7A.LG0.pdb 4rewC.LG2.pdb 1xqsD.LG0.pdb 1tb5A.LG0.pdb 2ya3C.LG2.pdb 1fa9A.LG1.pdb 1yxuB.LG0.pdb 3fhjB.LG1.pdb 1ro9A.LG0.pdb 1ptwB.LG0.pdb 2v92C.LG2.pdb 3fi0I.LG1.pdb 4cfeF.LG1.pdb 1ftaD.LG0.pdb,1yxuB.LG0.pdb 2y8lC.LG2.pdb 1oreA.LG0.pdb 3fhjA.LG1.pdb 1rorA.LG0.pdb 3tw2A.LG0.pdb 1xqsC.LG0.pdb 1t9gF.LG0.pdb 1ftaA.LG0.pdb
+1212,DB00194,926,3iarA.LG0.pdb,3iarA.LG0.pdb
+1215,DB00631,927,2ziaB.LG1.pdb 2ziaA.LG1.pdb 2zi9A.LG1.pdb 2a7qA.LG1.pdb 2zi9B.LG1.pdb,2zi9A.LG1.pdb
+1217,DB00277,928,3rfmA.LG0.pdb,3rfmA.LG0.pdb
+1224,DB01004,931,1ki2A.LG0.pdb 1ki2B.LG0.pdb,1ki2B.LG0.pdb
+1227,DB00900,933,1v3qA.LG0.pdb,1v3qA.LG0.pdb
+1230,DB00806,936,3tvxB.LG0.pdb 3tvxA.LG0.pdb,3tvxA.LG0.pdb
+1238,DB00623,941,3ko0O.LG3.pdb 1wrlF.LG1.pdb 3ko0Q.LG2.pdb 3ko0M.LG2.pdb 3ko0C.LG3.pdb 1wrlC.LG0.pdb 3ko0B.LG0.pdb 3ko0N.LG2.pdb 3ko0H.LG3.pdb 3ko0I.LG1.pdb 3ko0N.LG0.pdb 1wrlC.LG3.pdb 3ko0E.LG2.pdb 1wrlD.LG1.pdb 1wrkB.LG2.pdb 3ko0C.LG0.pdb 3ko0K.LG1.pdb 3ko0T.LG0.pdb 1wrlB.LG0.pdb 1wrlE.LG3.pdb 3ko0F.LG0.pdb 3ko0Q.LG3.pdb 3ko0T.LG2.pdb 3ko0F.LG1.pdb 3ko0I.LG2.pdb 3ko0L.LG0.pdb 3ko0D.LG0.pdb 3ko0D.LG1.pdb 1wrkA.LG1.pdb 3ko0R.LG0.pdb 1wrlC.LG1.pdb 3ko0A.LG2.pdb 3ko0L.LG2.pdb 3ko0Q.LG0.pdb 1wrlC.LG2.pdb 3ko0S.LG3.pdb 1wrkA.LG0.pdb 3ko0P.LG1.pdb 3ko0B.LG2.pdb 3ko0E.LG0.pdb 3ko0S.LG1.pdb 3ko0A.LG3.pdb 3ko0H.LG1.pdb 1wrlD.LG3.pdb 3ko0S.LG0.pdb 3ko0M.LG1.pdb 3ko0M.LG0.pdb 1wrlD.LG2.pdb 1ctrA.LG0.pdb 3ko0H.LG2.pdb 3ko0D.LG2.pdb 1wrlF.LG2.pdb 3ko0P.LG3.pdb 3ko0S.LG2.pdb 3ko0P.LG0.pdb 3ko0J.LG3.pdb 3ko0H.LG0.pdb 1wrlA.LG0.pdb 3ko0P.LG2.pdb 1wrlF.LG0.pdb 3ko0O.LG2.pdb 1wrlB.LG1.pdb 1wrkB.LG1.pdb 3ko0C.LG1.pdb 3ko0B.LG1.pdb 1wrlA.LG1.pdb 3ko0G.LG3.pdb 3ko0C.LG2.pdb 3ko0N.LG1.pdb 3ko0L.LG3.pdb 3ko0R.LG1.pdb 3ko0G.LG0.pdb 3ko0I.LG0.pdb 1wrlB.LG2.pdb 1wrkB.LG0.pdb 1wrlE.LG1.pdb 3ko0T.LG1.pdb 1wrlE.LG2.pdb 3ko0G.LG1.pdb 3ko0J.LG2.pdb 3ko0K.LG0.pdb 3ko0F.LG3.pdb 1wrlE.LG0.pdb 3ko0F.LG2.pdb 1wrlD.LG0.pdb 3ko0E.LG1.pdb 3ko0A.LG1.pdb 3ko0K.LG2.pdb 3ko0Q.LG1.pdb 3ko0I.LG3.pdb 1wrkA.LG2.pdb 3ko0O.LG0.pdb 3ko0L.LG1.pdb 3ko0J.LG1.pdb 3ko0R.LG2.pdb 3ko0O.LG1.pdb 1wrlA.LG2.pdb 3ko0A.LG0.pdb 1wrkA.LG3.pdb 3ko0J.LG0.pdb 3ko0G.LG2.pdb 1wrlA.LG3.pdb 3ko0D.LG3.pdb,3ko0H.LG3.pdb 1ctrA.LG0.pdb 3ko0H.LG1.pdb 3ko0H.LG2.pdb 1wrlC.LG3.pdb 1wrlC.LG1.pdb 1wrlC.LG2.pdb 3ko0H.LG0.pdb 1wrlC.LG0.pdb
+1243,DB00679,945,3tbgB.LG1.pdb 3tbgD.LG0.pdb 3tbgA.LG1.pdb 3tbgC.LG0.pdb 3tbgB.LG0.pdb 3tbgD.LG1.pdb 3tbgA.LG0.pdb 4wnwB.LG1.pdb 4wnwA.LG1.pdb 3tbgC.LG1.pdb,3tbgC.LG1.pdb 3tbgC.LG0.pdb
+1244,DB00933,945,3tbgD.LG0.pdb 3tbgB.LG1.pdb 3tbgA.LG1.pdb 3tbgC.LG0.pdb 3tbgD.LG1.pdb 3tbgB.LG0.pdb 3tbgA.LG0.pdb 3tbgC.LG1.pdb 4wnwB.LG1.pdb 4wnwA.LG1.pdb,3tbgC.LG1.pdb 3tbgC.LG0.pdb
+1252,DB00850,950,3m0wD.LG0.pdb 3m0wI.LG2.pdb 3m0wJ.LG2.pdb 3m0wH.LG1.pdb 3m0wE.LG1.pdb 3m0wE.LG0.pdb 3m0wH.LG0.pdb 3m0wJ.LG1.pdb 3m0wB.LG1.pdb 3m0wF.LG1.pdb 3m0wA.LG0.pdb 3m0wC.LG0.pdb 3m0wI.LG1.pdb 3m0wI.LG0.pdb 3m0wG.LG0.pdb 3m0wD.LG1.pdb 3m0wB.LG2.pdb 3m0wG.LG1.pdb 3m0wB.LG0.pdb 3m0wJ.LG0.pdb 3m0wA.LG1.pdb 3m0wF.LG0.pdb 3m0wC.LG1.pdb,3m0wI.LG2.pdb 3m0wI.LG0.pdb 3m0wI.LG1.pdb
+1265,DB00281,958,3jqzA.LG0.pdb,3jqzA.LG0.pdb
+1268,DB01087,960,4fgjB.LG2.pdb 4fgjA.LG1.pdb 4fgjB.LG1.pdb 4fgjA.LG2.pdb,4fgjA.LG1.pdb 4fgjA.LG2.pdb
+1269,DB01103,961,1jqeA.LG1.pdb,1jqeA.LG1.pdb
+1273,DB04711,964,2bxnA.LG6.pdb,2bxnA.LG6.pdb
+1274,DB00499,965,4oh5A.LG1.pdb 4oghA.LG0.pdb 4oh6A.LG1.pdb 4oilA.LG1.pdb 4ohaA.LG1.pdb 2ax6A.LG0.pdb 2ax9A.LG0.pdb,4oghA.LG0.pdb
+1276,DB01128,967,1z95A.LG0.pdb 4oktA.LG1.pdb 4ojbA.LG0.pdb 4okxA.LG1.pdb 4ok1A.LG1.pdb 4okwA.LG1.pdb 4okbA.LG1.pdb 4olmA.LG1.pdb,4ok1A.LG1.pdb
+1282,DB06228,973,2w26A.LG0.pdb,2w26A.LG0.pdb
+1294,DB02546,985,4qa0A.LG1.pdb 4qa0B.LG0.pdb 4lxzA.LG3.pdb 4qa2A.LG1.pdb 4qa2A.LG0.pdb 4lxzB.LG4.pdb 4lxzC.LG3.pdb 1c3sA.LG0.pdb 1t69A.LG0.pdb 4qa2B.LG0.pdb 4qa0B.LG1.pdb 4qa0A.LG0.pdb 4qa2B.LG1.pdb,4lxzC.LG3.pdb 4qa0A.LG0.pdb 4qa0A.LG1.pdb 1c3sA.LG0.pdb
+1302,DB01026,991,3ozwA.LG2.pdb 2v0mA.LG1.pdb 3i3kB.LG3.pdb 2v0mD.LG1.pdb 3ozwB.LG2.pdb 2v0mB.LG1.pdb 2v0mA.LG2.pdb 3ld6A.LG1.pdb 2v0mC.LG1.pdb 3i3kA.LG1.pdb 3ld6B.LG3.pdb,2v0mC.LG1.pdb 3ozwB.LG2.pdb 3ld6A.LG1.pdb
+1306,DB00317,994,3ug2A.LG0.pdb 2itzA.LG0.pdb 4wkqA.LG0.pdb 4i22A.LG0.pdb 2ityA.LG0.pdb 2itoA.LG0.pdb,2itzA.LG0.pdb
+1308,DB08916,996,4g5jA.LG2.pdb 4g5jA.LG0.pdb 4g5pA.LG0.pdb 4g5jA.LG1.pdb,4g5jA.LG1.pdb 4g5jA.LG0.pdb 4g5jA.LG2.pdb
+1316,DB01204,1004,4i41A.LG1.pdb 4i41A.LG0.pdb,4i41A.LG0.pdb 4i41A.LG1.pdb
+1322,DB01656,1010,3g4lB.LG0.pdb 1xoqA.LG0.pdb 1xmuA.LG0.pdb 1xmuB.LG0.pdb 1xoqB.LG0.pdb 3g4lA.LG0.pdb 3g4lC.LG0.pdb 3g4lD.LG0.pdb,3g4lD.LG0.pdb
+1328,DB00398,1015,1uwjA.LG0.pdb 1uwjB.LG0.pdb 1uwhB.LG0.pdb 4asdA.LG0.pdb 1uwhA.LG0.pdb,1uwjA.LG0.pdb 4asdA.LG0.pdb
+1330,DB00613,1016,2aouA.LG0.pdb 2aouA.LG1.pdb,2aouA.LG0.pdb 2aouA.LG1.pdb
+1331,DB06616,1017,4mxzA.LG0.pdb 4mxoA.LG0.pdb 4mxzB.LG0.pdb 3ue4B.LG0.pdb 3ue4A.LG0.pdb 4mxyB.LG0.pdb 4mxoB.LG0.pdb 4mxxB.LG0.pdb 4mxxA.LG0.pdb 4mxyA.LG0.pdb,4mxzA.LG0.pdb 3ue4A.LG0.pdb
+1332,DB00530,1018,4hjoA.LG0.pdb 1m17A.LG0.pdb,1m17A.LG0.pdb
+1333,DB01157,1019,1s3vA.LG0.pdb 1s3uA.LG0.pdb,1s3vA.LG0.pdb
+1335,DB01259,1021,1xkkA.LG0.pdb,1xkkA.LG0.pdb
+1364,DB00140,1043,1hzeA.LG0.pdb 1hzeB.LG0.pdb 1i18B.LG0.pdb 1i18A.LG0.pdb 1pkvB.LG0.pdb 1pkvA.LG0.pdb 1nb9A.LG1.pdb,1nb9A.LG1.pdb 1i18B.LG0.pdb
+1365,DB00642,1044,1ju6C.LG1.pdb 1jujD.LG1.pdb 1jujA.LG1.pdb 1ju6A.LG1.pdb 1jujC.LG1.pdb 1ju6B.LG1.pdb 1ju6D.LG1.pdb 1jujB.LG1.pdb 4m6lA.LG0.pdb,1jujB.LG1.pdb 4m6lA.LG0.pdb
+1367,DB00158,1046,4kn1A.LG0.pdb 4kmzA.LG0.pdb 4kn0A.LG0.pdb,
+1368,DB00563,1046,1dlsA.LG1.pdb 4kfjB.LG1.pdb 2w3mB.LG1.pdb 4kebB.LG1.pdb 4kmzA.LG0.pdb 4lrhE.LG0.pdb 1dhfB.LG0.pdb 4lrhH.LG0.pdb 4m6kA.LG0.pdb 2w3mA.LG1.pdb 3eigA.LG0.pdb 4lrhA.LG0.pdb 4lrhB.LG0.pdb 4lrhG.LG0.pdb 4lrhC.LG0.pdb 1dhfA.LG0.pdb 4lrhF.LG0.pdb 4lrhD.LG0.pdb 2w3bA.LG2.pdb 1drfA.LG0.pdb 2w3bB.LG2.pdb 1u72A.LG1.pdb,4lrhD.LG0.pdb 2w3mA.LG1.pdb
+1371,DB00293,1048,1hvyB.LG0.pdb 1hvyA.LG0.pdb 1hvyC.LG0.pdb 1i00B.LG1.pdb 1i00A.LG1.pdb 1hvyD.LG0.pdb,1hvyD.LG0.pdb
+1372,DB01076,1049,3cctA.LG0.pdb 1hwkC.LG1.pdb 1hwkB.LG3.pdb 3cctD.LG0.pdb 1hwkD.LG1.pdb 3cctC.LG1.pdb 3cctB.LG0.pdb 1hwkA.LG2.pdb 3cctB.LG1.pdb 1hwkB.LG2.pdb 3cctA.LG1.pdb 1hwkA.LG3.pdb 1hwkC.LG0.pdb 3cctD.LG1.pdb 1hwkD.LG2.pdb 3cctC.LG0.pdb,3cctB.LG1.pdb 3cctB.LG0.pdb
+1375,DB06605,1052,2p16A.LG0.pdb,2p16A.LG0.pdb
+1379,DB01030,1055,1k4tD.LG0.pdb,1k4tD.LG0.pdb
+1393,DB08865,1069,2wgjA.LG0.pdb 2yfxA.LG0.pdb 2xp2A.LG0.pdb 4ansA.LG0.pdb 4anqA.LG0.pdb,4anqA.LG0.pdb 2wgjA.LG0.pdb
+1395,DB00203,1071,2h42C.LG0.pdb 1xosA.LG0.pdb 3jwqA.LG0.pdb 2h42A.LG0.pdb 1tbfA.LG0.pdb 3jwqB.LG0.pdb 1udtA.LG0.pdb 3jwqD.LG0.pdb 2h42B.LG0.pdb 3jwqC.LG0.pdb,1xosA.LG0.pdb 3jwqC.LG0.pdb
+1405,DB00829,1075,2bxfB.LG0.pdb 2bxfA.LG0.pdb,2bxfA.LG0.pdb
+1436,DB00373,1099,3d4sA.LG0.pdb,3d4sA.LG0.pdb
+1439,DB00152,1102,3s4yB.LG0.pdb 3s4yA.LG1.pdb 3s4yA.LG0.pdb 3s4yB.LG1.pdb,3s4yB.LG0.pdb 3s4yB.LG1.pdb
+1441,DB00869,1104,3fw3A.LG0.pdb 4m2uA.LG0.pdb 1cilA.LG0.pdb 1cinA.LG0.pdb 3fw3B.LG0.pdb 4k13A.LG0.pdb 4m2wA.LG0.pdb,4m2uA.LG0.pdb 3fw3B.LG0.pdb
+1465,DB00695,1120,1z9yA.LG0.pdb,1z9yA.LG0.pdb
+1470,DB01254,1124,2gqgA.LG0.pdb 2gqgB.LG0.pdb,2gqgA.LG0.pdb
+1475,DB01268,1129,4agdA.LG0.pdb,4agdA.LG0.pdb
+1476,DB00619,1130,4bkjA.LG0.pdb 2hyyB.LG0.pdb 4bkjB.LG0.pdb 2hyyA.LG0.pdb 3pyyB.LG0.pdb 2hyyD.LG0.pdb 3pyyA.LG0.pdb 1t46A.LG0.pdb 2hyyC.LG0.pdb 2pl0A.LG0.pdb,1t46A.LG0.pdb 2pl0A.LG0.pdb 4bkjB.LG0.pdb 2hyyB.LG0.pdb
+1477,DB04868,1131,3cs9A.LG0.pdb 3cs9B.LG0.pdb 3cs9C.LG0.pdb 3cs9D.LG0.pdb,3cs9A.LG0.pdb
+1479,DB08901,1133,4u0iA.LG0.pdb 4qrcA.LG0.pdb 4uxqA.LG0.pdb 4tyjA.LG0.pdb,4u0iA.LG0.pdb 4tyjA.LG0.pdb 4qrcA.LG0.pdb
+1507,DB00733,1156,4axbA.LG1.pdb,4axbA.LG1.pdb
+1511,DB00147,1160,3fhxB.LG1.pdb 3fhxA.LG1.pdb,3fhxB.LG1.pdb
+1512,DB00165,1160,3fhxB.LG1.pdb 3fhxA.LG1.pdb,3fhxB.LG1.pdb
+1520,DB00884,1168,4nuaA.LG0.pdb 2qisA.LG0.pdb 1yv5A.LG0.pdb 4n9uA.LG0.pdb 4kpdA.LG1.pdb 4kqsA.LG1.pdb 4ng6A.LG1.pdb 4nkeA.LG0.pdb 1yq7A.LG0.pdb 3ryeA.LG0.pdb,4nkeA.LG0.pdb
+1525,DB00966,1172,3vn2A.LG1.pdb,3vn2A.LG1.pdb
+1531,DB01011,1178,1phgA.LG1.pdb 1w0gA.LG0.pdb,1phgA.LG1.pdb 1w0gA.LG0.pdb
+1534,DB01025,1181,2kotB.LG0.pdb 2kotA.LG0.pdb,2kotB.LG0.pdb
+1536,DB08881,1183,3og7A.LG0.pdb,3og7A.LG0.pdb
+1543,DB00205,1190,1j3jA.LG0.pdb 1j3jB.LG0.pdb,1j3jA.LG0.pdb
+1548,DB00360,1195,4nosD.LG0.pdb 4nosB.LG2.pdb 4d1pA.LG3.pdb 1mlwA.LG0.pdb 4d1nB.LG1.pdb 4nosC.LG1.pdb 4d1nC.LG6.pdb 4d1oB.LG4.pdb 4nosB.LG0.pdb 4d1oA.LG4.pdb 4d1nC.LG2.pdb 1tg2A.LG0.pdb 3nosB.LG1.pdb 4d1nA.LG4.pdb 4nosD.LG2.pdb 3nosA.LG2.pdb 4d1nA.LG2.pdb 4d1oB.LG1.pdb 4nosA.LG3.pdb 1mmtA.LG0.pdb 4d1pB.LG2.pdb 1mmkA.LG0.pdb 1kw0A.LG0.pdb 4d1pA.LG1.pdb 4d1nB.LG3.pdb 4nosA.LG1.pdb 1lrmA.LG0.pdb 4nosC.LG3.pdb 4d1pB.LG0.pdb 4d1nD.LG1.pdb 4d1nD.LG3.pdb 3nosB.LG3.pdb 3nosA.LG3.pdb 1j8uA.LG0.pdb 1dmwA.LG0.pdb 4d1oA.LG3.pdb,1mlwA.LG0.pdb 4d1nA.LG4.pdb 4nosD.LG2.pdb 4nosD.LG0.pdb 1mmkA.LG0.pdb 4d1pB.LG2.pdb 4d1nA.LG2.pdb 4d1pB.LG0.pdb
+1552,DB01085,1199,3t3zA.LG1.pdb 3t3qD.LG1.pdb 3t3qB.LG1.pdb 3t3sB.LG1.pdb 3t3sD.LG1.pdb 3t3rD.LG1.pdb 3t3zC.LG1.pdb 3t3sC.LG1.pdb 3t3qC.LG1.pdb 3t3rC.LG1.pdb 3t3sF.LG1.pdb 3t3zD.LG1.pdb 3t3rB.LG1.pdb 3t3sE.LG1.pdb 3t3rA.LG1.pdb 3t3qA.LG1.pdb 3t3zB.LG1.pdb 3t3sA.LG1.pdb,3t3zA.LG1.pdb 3t3qA.LG1.pdb
+1553,DB00117,1200,4phcD.LG0.pdb 4phcC.LG0.pdb 4phcA.LG0.pdb 4phcB.LG0.pdb,4phcA.LG0.pdb
