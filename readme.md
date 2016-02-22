@@ -20,11 +20,11 @@
 
 1.  script
 
-    ./script/count<sub>atms.py</sub>
+    ./script/count\_atms.py
 
 2.  result
 
-    ./dat/approved<sub>heavy</sub><sub>atom</sub><sub>num.txt</sub>
+    ./dat/approved\_heavy\_atom\_num.txt
     ./dat/elements.txt
 
 ## DONE 3D structures of the chemicals<a id="orgheadline21"></a>
@@ -33,22 +33,22 @@
 
 1.  pdb &#x2013;> uniprt
 
-    ./dat/pdbsws<sub>chain.txt</sub>
+    ./dat/pdbsws\_chain.txt
 
 2.  drug bank id &#x2013;> uniprt ids
 
     1.  ./script/crawler.py
-    2.  ./dat/drugid<sub>uniprturls.dat</sub>
+    2.  ./dat/drugid\_uniprturls.dat
 
 3.  uniprt id &#x2013;> pdb id
 
-    1.  ./script/uniprt<sub>pdb.py</sub>
-    2.  ./dat/uniprt<sub>to</sub><sub>pdb.dat</sub>
+    1.  ./script/uniprt\_pdb.py
+    2.  ./dat/uniprt\_to\_pdb.dat
 
 4.  drug bank id &#x2013;> pdb id
 
-    1.  ./script/query<sub>pdb.py</sub>
-    2.  ./dat/drugid<sub>pdb.dat</sub>
+    1.  ./script/query\_pdb.py
+    2.  ./dat/drugid\_pdb.dat
     3.  82773 pdbs
     4.  138078 chains
 
@@ -70,8 +70,8 @@
 
 1.  DONE Extract the ligand atoms from the CIF files
 
-    1.  ./script/qmol<sub>CIF2PDB.pl</sub> (not compatible with latest perl modules)
-    2.  *work/jaydy/dat/fda<sub>pdb</sub><sub>mb</sub>*
+    1.  ./script/qmol\_CIF2PDB.pl (not compatible with latest perl modules)
+    2.  *work/jaydy/dat/fda\_pdb\_mb*
 
 2.  DONE Cluster drug ligands
 
@@ -91,11 +91,11 @@
         2.  pkcombu Segmentation fault for
             1.  DB01049
             2.  to check
-                pkcombu -A /work/jaydy/working/kcombu<sub>run</sub>/DB01049<sub>fda.sdf</sub> -B /work/jaydy/dat/fda<sub>pdb</sub><sub>mb</sub>/ib/3ibdA.LG3.pdb
+                pkcombu -A /work/jaydy/working/kcombu\_run/DB01049\_fda.sdf -B /work/jaydy/dat/fda\_pdb\_mb/ib/3ibdA.LG3.pdb
             3.  DB00707
     2.  refuse proteins if their ligand's tanimoto < 0.9
         1.  ./script/calculateTanimoto.py
-        2.  TANI<sub>DIR</sub> = "/work/jaydy/working/tanimoto"
+        2.  TANI\_DIR = "/work/jaydy/working/tanimoto"
 
 ### TODO Cluster the bound proteins based on sequence similarity<a id="orgheadline20"></a>
 
@@ -105,11 +105,11 @@
 
 2.  DONE clean the proteins sequences
 
-    python ./script/pdb<sub>to</sub><sub>fasta.py</sub> > run.sh
+    python ./script/pdb\_to\_fasta.py > run.sh
     sh ./script/run.sh
     
     1.  ctrip, heavy atom model
-        1.  /project/michal/apps/jackal<sub>64bit</sub>/bin/ctrip
+        1.  /project/michal/apps/jackal\_64bit/bin/ctrip
     2.  ./script/pdb2pdb.pl
         move pdb sequence to start at 1
     3.  ./script/pdb2fasta.pl
@@ -121,9 +121,9 @@
 
     1.  [X] do not count the prt with seq length > 600
     2.  cluster
-        python ./script/cluster<sub>seq.py</sub> > ./script/cluster<sub>seq.sh</sub>
+        python ./script/cluster\_seq.py > ./script/cluster\_seq.sh
         cd /work/jaydy/working/cluster
-        sh /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/cluster<sub>seq.sh</sub>
+        sh /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/cluster\_seq.sh
     3.  collect
         /home/jaydy/Workspace/Bitbucket/fda-approved-drugs/script/collect.py
 
@@ -131,8 +131,8 @@
 
     1.  original data set of 1554 fda-approved drugs
         1.  script
-            ./script/count<sub>atms.py</sub>
-            ./dat/drug<sub>size.txt</sub>
+            ./script/count\_atms.py
+            ./dat/drug\_size.txt
         2.  result
             
             <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -240,7 +240,7 @@
             (8, 44)
     2.  after processing
         1.  script
-            ./script/drug<sub>size.py</sub>
+            ./script/drug\_size.py
         2.  result
             
             <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -309,7 +309,7 @@
             </table>
         3.  within the range of (8, 44)
             1.  dat
-                ./dat/representative<sub>drugs.csv</sub>
+                ./dat/representative\_drugs.csv
                 
                 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
                 
