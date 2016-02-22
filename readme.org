@@ -30,6 +30,21 @@ CLOSED: [2015-04-22 Wed 12:06]
 3. 82773 pdbs
 4. 138078 chains
 
+**** table
+#+BEGIN_SRC python
+  import pickle
+  import pandas as pd
+
+  dat_ifn = "./dat/drugid_pdb.dat"
+
+  with open(dat_ifn, 'r') as f:
+      dat = pickle.load(f)
+
+  dset = pd.DataFrame({key: list(val) for key, val in dat.iteritems()})
+
+
+#+END_SRC
+
 *** DONE Filter the unbound proteins
 
 **** DONE Extract the ligand atoms from the CIF files
@@ -43,7 +58,7 @@ CLOSED: [2015-05-05 Tue 16:41]
    #+BEGIN_SRC
 $ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
 
-$ python /home/jaydy/Workspace/Bitbucket/GeauxCluster/src/geauxcluster.py -i approved.txt -o approved.txt.clusters -k DRUGBANK_ID
+$ python /home/jaydy/Workspace/Bitbucket/geauxcluster/src/geauxcluster.py -i approved.txt -o approved.txt.clusters -k DRUGBANK_ID
    #+END_SRC
 2. script
    ./script/clustering.py
@@ -92,7 +107,7 @@ CLOSED: [2015-05-05 Tue 20:31]
    
 
 **** TODO 
-1. size of 1554 drugs
+1. original data set of 1554 fda-approved drugs
    1. script
       ./script/count_atms.py
       ./dat/drug_size.txt
@@ -116,7 +131,7 @@ CLOSED: [2015-05-05 Tue 20:31]
       (0, 62.6)
    5. 1 \sigma range
       (8, 44)
-2. size of filtered drugs
+2. after processing
    1. script
       ./script/drug_size.py
    2. result
@@ -130,9 +145,18 @@ CLOSED: [2015-05-05 Tue 20:31]
       | 50%        |  21.000000 |
       | 75%        |  29.000000 |
       | max        |  93.000000 |
-   3. within the range of (8, 44)
-   4. dat
+   3. within 8 ~ 44 atoms
       ./dat/representative_drugs.csv
+      | statistics | #HeavyAtom |
+      |------------+------------|
+      | count      | 186.000000 |
+      | mean       |  22.639785 |
+      | std        |   8.456204 |
+      | min        |   8.000000 |
+      | 25%        |  16.000000 |
+      | 50%        |  21.000000 |
+      | 75%        |  29.000000 |
+      | max        |  44.000000 |
 
 
 **** TODO
