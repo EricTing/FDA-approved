@@ -55,10 +55,9 @@ CLOSED: [2015-04-26 Sun 11:33] by Michal
 **** DONE Cluster drug ligands
 CLOSED: [2015-05-05 Tue 16:41]
 1. cmd
-   #+BEGIN_SRC
-$ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
-
-$ python /home/jaydy/Workspace/Bitbucket/geauxcluster/src/geauxcluster.py -i approved.txt -o approved.txt.clusters -k DRUGBANK_ID
+   #+BEGIN_SRC sh
+     $ cd ~/Workspace/Bitbucket/fda-approved-drugs/dat/
+     $ python /home/jaydy/Workspace/Bitbucket/geauxcluster/src/geauxcluster.py -i approved.txt -o approved.txt.clusters -k DRUGBANK_ID
    #+END_SRC
 2. script
    ./script/clustering.py
